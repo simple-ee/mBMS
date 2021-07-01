@@ -27,6 +27,7 @@ community BMS.
 - This board will handle discharge and charge currents between the battery
 and the external world.  
 - It has the following specs:
+
 Item | Description
 -----|------------
 1 | 4-Channel 16-BIT ADC with an effective resolution of 16-Bit at 20sps
@@ -47,6 +48,7 @@ drive the charge MOSFET
 second one to act as external COM to relay information to BMS board
 9 | 125A fuse that will act as the short circuit protection with a breaking
 capacity of 1kA.
+
 ## The BMS Board
 
 ### Rendered PCB
