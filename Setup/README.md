@@ -22,9 +22,9 @@ memory space and also supports the PB variant of atmega328
 Here is the source code link for both:
 
 1. The Protection board
-    - 
+    - Test
 2. The BMS Board
-    - 
+    - Test
 
 ### Wiring and Connection
 
