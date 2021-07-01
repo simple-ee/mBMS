@@ -73,7 +73,7 @@ Item | Description
 ## The Passive Balance Board
 
 ### Rendered PCB
-
+<img src="images/20190708_PassiveBoard_A0.png" width="30%">
 
 
 ### Actual PCB
