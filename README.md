@@ -21,6 +21,14 @@ this will help a lot of people and want to give back.  Also smarter people than
 me could take this design and help optomize the code and design and make this a
 community BMS.
 
+## SETUP
+
+### Software/Bootloader
+
+### Wiring and Connection
+
+## Pinout and Block Diagram
+
 ## The Protection board
 
 ### Rendered PCB
@@ -78,3 +86,4 @@ Item | Description
 
 ### Actual PCB
 <img src="images/Balance_Board.jpg" width="30%">
+
