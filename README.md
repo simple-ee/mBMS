@@ -17,6 +17,7 @@ me could take this desig and help optomize the code and design as I'm not perfec
 and probably over designed this.
 
 ## The Protection board
+
 ### Rendered PCB
 <img src="images/20190720_Project_OCP-OVP-UVP.png" width="30%">
 
@@ -45,6 +46,9 @@ and the external world.
     9. 125A fuse that will act as the short circuit protection with a breaking
     capacity of 1kA.
 ## The BMS Board
+
 ### Rendered PCB
+<img src="images/20200103_8SBMS_A2_00003.png" width="30%">
 
 ### Actual PCB
+<img src="images/BMS.png" width="30%">
