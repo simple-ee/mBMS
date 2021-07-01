@@ -29,12 +29,14 @@ community BMS.
 
 ## Pinout and Block Diagram
 
-## The Protection board
+## Board information
 
-### Rendered PCB
+### The Protection board
+
+#### Rendered PCB
 <img src="images/20190720_Project_OCP-OVP-UVP.png" width="30%">
 
-### Actual PCB
+#### Actual PCB
 <img src="/images/OCP_Board.jpg" width="40%">
 
 - This board will handle discharge and charge currents between the battery
@@ -53,12 +55,12 @@ and the external world.
     8 | Two I2C ports, one to act as an internal COM for adc and display, andsecond one to act as external COM to relay information to BMS board
     9 | 125A fuse that will act as the short circuit protection with a breaking capacity of 1kA.
 
-## The BMS Board
+### The BMS Board
 
-### Rendered PCB
+#### Rendered PCB
 <img src="images/20200103_8SBMS_A2_00003.png" width="30%">
 
-### Actual PCB
+#### Actual PCB
 <img src="images/BMS.jpg" width="30%">
 
 - This board is handling the cell level monitoring function as well as sending
@@ -78,12 +80,12 @@ Item | Description
 4 | Can be powered via the battery pack or external power source
 5 | External action button. Default state is for reset fault condition
 
-## The Passive Balance Board
+### The Passive Balance Board
 
-### Rendered PCB
+#### Rendered PCB
 <img src="images/20190708_PassiveBoard.png" width="30%">
 
 
-### Actual PCB
+#### Actual PCB
 <img src="images/Balance_Board.jpg" width="30%">
 
