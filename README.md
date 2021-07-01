@@ -21,7 +21,7 @@ and probably over designed this.
 <img src="images/20190720_Project_OCP-OVP-UVP.png" width="30%">
 
 ### Actual PCB
-<img src="/images/OCP_Board.jpg" width="30%">
+<img src="/images/OCP_Board.jpg" width="40%">
 
 1. This board will handle discharge and charge currents between the battery
 and the external world.  
@@ -42,6 +42,9 @@ and the external world.
     drive the charge MOSFET
     8. Two I2C ports, one to act as an internal COM for adc and display, and
     second one to act as external COM to relay information to BMS board
-    9. 125A fuse that will act as the short circuit protection with a high I^2t\
-    to prevent
+    9. 125A fuse that will act as the short circuit protection with a breaking
+    capacity of 1kA.
 ## The BMS Board
+### Rendered PCB
+
+### Actual PCB
