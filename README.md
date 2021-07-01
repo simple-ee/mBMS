@@ -56,5 +56,13 @@ on a TFT display either ST7735 or ST7789.  If for any reason a fault is triggere
 or one of the configured protection values is triggered you can send a reset
 fault command either via an external trigger button or serial command over uart.
 - It has the following specs:
-    1. x2 4-Channel 16-BIT ADC with an effective resolution of 16-BIT at 20sps
-    2. 
+
+Item | Description
+-----|------------
+1 | x2 4-Channel 16-BIT ADC with an effective resolution of 16-BIT at 20sps
+2 | External 16MHz Crystal oscillator
+3 | External SPI port to connect TFT display
+4 | Can be powered via the battery pack or external power source
+5 | External action button. Default state is for reset fault condition
+
+## The Passive Balance Board
