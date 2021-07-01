@@ -13,8 +13,8 @@ the cells perfectly.
 
 I'm posting this design because I've learned a lot from other projects and feel
 this will help a lot of people and want to give back.  Also smarter people than
-me could take this desig and help optomize the code and design as I'm not perfect
-and probably over designed this.
+me could take this design and help optomize the code and design and make this a
+community BMS.
 
 ## The Protection board
 
@@ -24,26 +24,28 @@ and probably over designed this.
 ### Actual PCB
 <img src="/images/OCP_Board.jpg" width="40%">
 
-1. This board will handle discharge and charge currents between the battery
+- This board will handle discharge and charge currents between the battery
 and the external world.  
-2. It has the following specs:
-    1. 4-Channel 16-BIT ADC with an effective resolution of 16-Bit
-    2. 100A hall effect current sensor
-    3. Up to 3 Discharge N-Channel MOSFETS with 0.7mOhm DCR and 425A 
+- It has the following specs:
+    Item | Description
+    -----|------------
+    1. | 4-Channel 16-BIT ADC with an effective resolution of 16-Bit at 20sps
+    2. | 100A hall effect current sensor
+    3. | Up to 3 Discharge N-Channel MOSFETS with 0.7mOhm DCR and 425A 
     current capability. ( Effective current handling per mosfet without
     heatsink is 30A)
-    4. Up to 2 charge N-Channle MOSFETS with 0.7mOhm DCR and 425A current
+    4. | Up to 2 charge N-Channle MOSFETS with 0.7mOhm DCR and 425A current
     capability. (Effective current handling per mosfet without heatsink is 
     30A)
-    5. Optoisolator to drive the charge mosfets as it is floating relative
+    5. | Optoisolator to drive the charge mosfets as it is floating relative
     to the battery ground.
-    6. High efficiency buck converter to power the MCU and supporting 
+    6. | High efficiency buck converter to power the MCU and supporting 
     circuits.
-    7. Low power LDO to power the secondary side of the optoisolator to 
+    7. | Low power LDO to power the secondary side of the optoisolator to 
     drive the charge MOSFET
-    8. Two I2C ports, one to act as an internal COM for adc and display, and
+    8. | Two I2C ports, one to act as an internal COM for adc and display, and
     second one to act as external COM to relay information to BMS board
-    9. 125A fuse that will act as the short circuit protection with a breaking
+    9. | 125A fuse that will act as the short circuit protection with a breaking
     capacity of 1kA.
 ## The BMS Board
 
@@ -51,4 +53,15 @@ and the external world.
 <img src="images/20200103_8SBMS_A2_00003.png" width="30%">
 
 ### Actual PCB
-<img src="images/BMS.png" width="30%">
+<img src="images/BMS.jpg" width="30%">
+
+- This board is handling the cell level monitoring function as well as sending
+controls to the passive balance resistors for balancing the cells.  It 
+incorporates cell level OVP and UVP which is configurable and also receives the
+current values from the Protection board via I2C and then displays all values
+on a TFT display either ST7735 or ST7789.  If for any reason a fault is triggered
+or one of the configured protection values is triggered you can send a reset
+fault command either via an external trigger button or serial command over uart.
+- It has the following specs:
+    1. x2 4-Channel 16-BIT ADC with an effective resolution of 16-BIT at 20sps
+    2. 
