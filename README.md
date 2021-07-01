@@ -18,7 +18,7 @@ and probably over designed this.
 
 ## The Protection board
 Actual PCB | Rendered PCB
----------|--------------
+----------|------------
 <img src="/images/OCP_Board.jpg"> | <img src="images/20190720_Project_OCP-OVP-UVP.png">
 
 1. This board will handle discharge and charge currents between the battery
