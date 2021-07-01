@@ -11,6 +11,11 @@ Even though this design is now my old design its still very functional and very
 stable as it has been running my 4kWh system for about 6 months and protecting 
 the cells perfectly.  
 
+The reason for making it a modular design is for easy upgradability and also,
+considering the current chip shortage, is to replace sections of the board in
+case there are no parts available.  This will prevent the need to redo and 
+re-layout of the entire design.
+
 I'm posting this design because I've learned a lot from other projects and feel
 this will help a lot of people and want to give back.  Also smarter people than
 me could take this design and help optomize the code and design and make this a
@@ -66,3 +71,10 @@ Item | Description
 5 | External action button. Default state is for reset fault condition
 
 ## The Passive Balance Board
+
+### Rendered PCB
+
+
+
+### Actual PCB
+<img src="images/Balance_Board.jpg" width="30%">
