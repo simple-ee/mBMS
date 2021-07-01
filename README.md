@@ -17,6 +17,8 @@ me could take this desig and help optomize the code and design as I'm not perfec
 and probably over designed this.
 
 ## The Protection board
+Actual PCB | Rendered PCB
+-----------|--------------
 <img src="/images/OCP_Board.jpg" width="50%"> | <img src="images/20190720_Project_OCP-OVP-UVP.png" width="50%">
 
 1. This board will handle discharge and charge currents between the battery
