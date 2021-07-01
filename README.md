@@ -17,7 +17,7 @@ me could take this desig and help optomize the code and design as I'm not perfec
 and probably over designed this.
 
 ## The Protection board
-![OCP Board Image](images\OCP_Board.jpg)
+![OCP Board Image](https://github.com/simple-ee/mBMS/images\OCP_Board.jpg)
 1. This board will handle discharge and charge currents between the battery
 and the external world.  
 2. It has the following specs:
