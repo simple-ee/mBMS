@@ -22,7 +22,7 @@ memory space and also supports the PB variant of atmega328
 Here is the source code link for both:
 
 1. The Protection board
-    1. [theProtectionBoard](https://github.com/simple-ee/mBMS/Source Code/)
+    1. [theProtectionBoard](https://github.com/simple-ee/mBMS/tree/main/Source%20Code/theProtectionBoard/)
 2. The BMS Board
     1. Test
 
