@@ -24,6 +24,7 @@ community BMS.
 ## SETUP
 
 ### Software/Bootloader
+[Software Setup](https://github.com/simple-ee/mBMS/tree/main/Setup)
 
 ### Wiring and Connection
 
