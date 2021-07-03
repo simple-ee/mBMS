@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+LIBS:20190708_7SBMS_A0-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connectors:S9B-PH-SM4-TB(LF)(SN) P301
+U 1 1 5D302FDB
+P 5125 4200
+F 0 "P301" H 5125 3350 50  0000 R CNN
+F 1 "S9B-PH-SM4-TB(LF)(SN)" H 5075 3550 60  0001 C CNN
+F 2 "Connectors_sg:S9B-PH-SM4-TB" V 5725 4650 60  0001 C CNN
+F 3 "" H 5075 4400 60  0001 C CNN
+F 4 "JST Sales America Inc." H 5025 4500 60  0001 C CNN "Manufacturer"
+F 5 "9POS" H 5175 4350 50  0000 R CNN "P_Value"
+F 6 "2A" H 5375 4650 50  0001 C CNN "P_Rating"
+F 7 "SMD" H 5125 4800 60  0001 C CNN "Package"
+	1    5125 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5025 4150 4725 4150
+Wire Wire Line
+	5025 4050 4725 4050
+Wire Wire Line
+	5025 3950 4725 3950
+Wire Wire Line
+	5025 3850 4725 3850
+Wire Wire Line
+	5025 3750 4725 3750
+Wire Wire Line
+	5025 3650 4725 3650
+Wire Wire Line
+	5025 3550 4725 3550
+Wire Wire Line
+	5025 3450 4725 3450
+Text Label 4725 4150 0    50   ~ 0
+BAT0
+$Comp
+L power:GND #PWR0117
+U 1 1 5D305BB9
+P 4950 4375
+F 0 "#PWR0117" H 4950 4125 50  0001 C CNN
+F 1 "GND" H 4950 4225 50  0000 C CNN
+F 2 "" H 4950 4375 50  0001 C CNN
+F 3 "" H 4950 4375 50  0001 C CNN
+	1    4950 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 4250 4950 4250
+Wire Wire Line
+	4950 4250 4950 4375
+Text Label 4725 4050 0    50   ~ 0
+BAT1
+Text Label 4725 3950 0    50   ~ 0
+BAT2
+Text Label 4725 3850 0    50   ~ 0
+BAT3
+Text Label 4725 3750 0    50   ~ 0
+BAT4
+Text Label 4725 3650 0    50   ~ 0
+BAT5
+Text Label 4725 3550 0    50   ~ 0
+BAT6
+Text Label 4725 3450 0    50   ~ 0
+BAT7
+Text HLabel 1675 4150 0    50   Input ~ 0
+BAT0
+Text HLabel 1675 4050 0    50   Input ~ 0
+BAT1
+Text HLabel 1675 3950 0    50   Input ~ 0
+BAT2
+Text HLabel 1675 3850 0    50   Input ~ 0
+BAT3
+Text HLabel 1675 3750 0    50   Input ~ 0
+BAT4
+Text HLabel 1675 3650 0    50   Input ~ 0
+BAT5
+Text HLabel 1675 3550 0    50   Input ~ 0
+BAT6
+Text HLabel 1675 3450 0    50   Input ~ 0
+BAT7
+Wire Wire Line
+	1675 4150 1925 4150
+Wire Wire Line
+	1675 4050 1925 4050
+Wire Wire Line
+	1675 3950 1925 3950
+Wire Wire Line
+	1675 3850 1925 3850
+Wire Wire Line
+	1675 3750 1925 3750
+Wire Wire Line
+	1675 3650 1925 3650
+Wire Wire Line
+	1675 3550 1925 3550
+Wire Wire Line
+	1675 3450 1925 3450
+Text Label 1925 4150 2    50   ~ 0
+BAT0
+Text Label 1925 4050 2    50   ~ 0
+BAT1
+Text Label 1925 3950 2    50   ~ 0
+BAT2
+Text Label 1925 3850 2    50   ~ 0
+BAT3
+Text Label 1925 3750 2    50   ~ 0
+BAT4
+Text Label 1925 3650 2    50   ~ 0
+BAT5
+Text Label 1925 3550 2    50   ~ 0
+BAT6
+Text Label 1925 3450 2    50   ~ 0
+BAT7
+$EndSCHEMATC

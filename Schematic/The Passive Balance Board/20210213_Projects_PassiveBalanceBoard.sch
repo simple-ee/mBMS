@@ -1,0 +1,368 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 2
+Title "7S BMS - Main Page"
+Date "2020-07-30"
+Rev "A2"
+Comp "simple-ee.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 7150 6625 0    50   ~ 0
+BAT7
+Text Label 7150 6725 0    50   ~ 0
+BAT6
+Text Label 7150 6825 0    50   ~ 0
+BAT5
+Text Label 7150 6925 0    50   ~ 0
+BAT4
+Text Label 7150 7025 0    50   ~ 0
+BAT3
+Text Label 7150 7125 0    50   ~ 0
+BAT2
+Text Label 7150 7225 0    50   ~ 0
+BAT1
+Text Label 7150 7325 0    50   ~ 0
+BAT0
+Text Label 7500 4350 2    50   ~ 0
+BAT7
+Text Label 7500 4450 2    50   ~ 0
+BAT6
+Text Label 7500 4550 2    50   ~ 0
+BAT5
+Text Label 7500 4650 2    50   ~ 0
+BAT4
+Text Label 7500 4750 2    50   ~ 0
+BAT3
+Text Label 7500 4850 2    50   ~ 0
+BAT2
+Text Label 7500 4950 2    50   ~ 0
+BAT1
+Text Label 7500 5050 2    50   ~ 0
+BAT0
+Wire Wire Line
+	7100 6625 7350 6625
+Wire Wire Line
+	7100 6725 7350 6725
+Wire Wire Line
+	7100 6825 7350 6825
+Wire Wire Line
+	7100 6925 7350 6925
+Wire Wire Line
+	7100 7025 7350 7025
+Wire Wire Line
+	7100 7125 7350 7125
+Wire Wire Line
+	7100 7225 7350 7225
+Wire Wire Line
+	7100 7325 7350 7325
+Entry Wire Line
+	7350 6625 7450 6525
+Entry Wire Line
+	7350 6725 7450 6625
+Entry Wire Line
+	7350 6825 7450 6725
+Entry Wire Line
+	7350 6925 7450 6825
+Entry Wire Line
+	7350 7025 7450 6925
+Entry Wire Line
+	7350 7125 7450 7025
+Entry Wire Line
+	7350 7225 7450 7125
+Entry Wire Line
+	7350 7325 7450 7225
+Wire Wire Line
+	7300 5050 7550 5050
+Wire Wire Line
+	7300 4950 7550 4950
+Wire Wire Line
+	7300 4850 7550 4850
+Wire Wire Line
+	7300 4750 7550 4750
+Wire Wire Line
+	7300 4650 7550 4650
+Wire Wire Line
+	7300 4550 7550 4550
+Wire Wire Line
+	7300 4450 7550 4450
+Wire Wire Line
+	7300 4350 7550 4350
+Entry Wire Line
+	7550 5050 7650 5150
+Entry Wire Line
+	7550 4950 7650 5050
+Entry Wire Line
+	7550 4850 7650 4950
+Entry Wire Line
+	7550 4750 7650 4850
+Entry Wire Line
+	7550 4650 7650 4750
+Entry Wire Line
+	7550 4550 7650 4650
+Entry Wire Line
+	7550 4450 7650 4550
+Entry Wire Line
+	7550 4350 7650 4450
+$Sheet
+S 6350 4200 950  1875
+U 5D242B82
+F0 "BalanceSection" 50
+F1 "BalanceSection.sch" 50
+F2 "D0" I L 6350 5950 50 
+F3 "D1" I L 6350 5850 50 
+F4 "D2" I L 6350 5750 50 
+F5 "D3" I L 6350 5650 50 
+F6 "BAT0" O R 7300 5050 50 
+F7 "BAT1" O R 7300 4950 50 
+F8 "BAT2" O R 7300 4850 50 
+F9 "BAT3" O R 7300 4750 50 
+F10 "BAT4" O R 7300 4650 50 
+F11 "BAT5" O R 7300 4550 50 
+F12 "BAT6" O R 7300 4450 50 
+F13 "BAT7" O R 7300 4350 50 
+F14 "D4" I L 6350 5550 50 
+F15 "D5" I L 6350 5450 50 
+F16 "D6" I L 6350 5350 50 
+F17 "D7" I L 6350 5250 50 
+$EndSheet
+Wire Wire Line
+	6175 5250 6350 5250
+Wire Wire Line
+	6350 5350 6175 5350
+Wire Wire Line
+	6175 5450 6350 5450
+Wire Wire Line
+	6175 5550 6350 5550
+Wire Wire Line
+	6350 5650 6175 5650
+Wire Wire Line
+	6175 5750 6350 5750
+Wire Wire Line
+	6350 5850 6175 5850
+Wire Wire Line
+	6175 5950 6350 5950
+Text Notes 10700 775  0    100  ~ 20
+DATE:
+Text Notes 13025 775  0    100  ~ 20
+DESCRIPTION:
+Text Notes 11250 775  0    100  ~ 20
+REVISION:
+Text Notes 14700 775  0    100  ~ 20
+REVISION CODE:
+Text Notes 10725 925  0    50   ~ 0
+2019/12/20
+Text Notes 11275 925  0    50   ~ 0
+A0
+Text Notes 12025 775  0    100  ~ 20
+CREATED BY:
+Text Notes 12050 925  0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 13050 925  0    50   ~ 0
+INITIAL RELEASE DESIGN
+Text Notes 14725 925  0    39   ~ 0
+20191220_PROJECTS_8SPASSIVE_BALANCE_A0_00001
+Wire Notes Line style solid
+	10700 800  16400 800 
+Wire Notes Line style solid
+	16400 975  10700 975 
+Wire Notes Line style solid
+	10700 600  16400 600 
+Wire Notes Line style solid
+	10700 5375 16400 5375
+Wire Notes Line style solid
+	16400 600  16400 5375
+Wire Notes Line style solid
+	10700 600  10700 5375
+Wire Notes Line style solid
+	14700 600  14700 5375
+Wire Notes Line style solid
+	13025 600  13025 5375
+Wire Notes Line style solid
+	12025 600  12025 5375
+Wire Notes Line style solid
+	11250 600  11250 5375
+Text Notes 10725 1100 0    50   ~ 0
+2020/07/18
+Text Notes 11275 1100 0    50   ~ 0
+A1
+Text Notes 12050 1100 0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 13050 1100 0    50   ~ 0
+1. FIXED INCORRECT CELL CONFIGURATION\n
+Text Notes 14725 1100 0    39   ~ 0
+20200718_PROJECTS_8SPASSIVE_BALANCE_A1_00002
+Wire Notes Line style solid
+	16400 1150 10700 1150
+Text Notes 10725 1275 0    50   ~ 0
+2020/07/30
+Text Notes 11275 1275 0    50   ~ 0
+A2
+Text Notes 12050 1275 0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 13050 1300 0    25   ~ 0
+1. REMOVED RESISTORS\n2. INCREASE COPPER GROUND PLANE, ADDING MOUNTING HOLES\n3. 2OZ COPPER FOR BETTER HEAT DISSIPATION
+Text Notes 14725 1275 0    39   ~ 0
+20200730_PROJECTS_8SPASSIVE_BALANCE_A2_00003
+Wire Notes Line style solid
+	16400 1325 10700 1325
+Text Notes 11275 1450 0    50   ~ 0
+A3
+Text Notes 10725 1450 0    50   ~ 0
+2021/02/13
+Text Notes 13050 1400 0    25   ~ 0
+1. ADDED R313-R320 THERMAL JUMPERS
+Text Notes 12050 1450 0    50   ~ 0
+STEVEN GUZMAN
+Wire Notes Line style solid
+	16400 1500 10700 1500
+Text Notes 14725 1450 0    39   ~ 0
+20210213_PROJECTS_8SPASSIVE_BALANCE_A3_00004
+$Comp
+L Modules:8S_PASSIVE_V2 U101
+U 1 1 60C25868
+P 6800 6875
+F 0 "U101" H 6800 7333 60  0000 C CNN
+F 1 "8S_PASSIVE_V2" H 6800 7254 25  0000 C CNN
+F 2 "Modules:8S_PASSIVE_V2" V 5700 6825 60  0001 C CNN
+F 3 "" H 7400 8125 60  0001 C CNN
+F 4 "simple-ee.com" H 6775 5725 60  0001 C CNN "Manufacturer"
+F 5 "8S" H 6925 5850 60  0001 C CNN "P_Value"
+F 6 "0.2A-0.365A" H 6825 5950 60  0001 C CNN "P_Rating_U"
+F 7 "5R-10R" H 6925 6050 60  0001 C CNN "P_Tolerance"
+F 8 "T/H" H 6725 5850 60  0001 C CNN "Package"
+	1    6800 6875
+	1    0    0    -1  
+$EndComp
+Text Label 6375 6625 0    50   ~ 0
+D7
+Text Label 6375 6725 0    50   ~ 0
+D6
+Text Label 6375 6825 0    50   ~ 0
+D5
+Text Label 6375 6925 0    50   ~ 0
+D4
+Text Label 6375 7025 0    50   ~ 0
+D3
+Text Label 6375 7125 0    50   ~ 0
+D2
+Text Label 6375 7225 0    50   ~ 0
+D1
+Text Label 6375 7325 0    50   ~ 0
+D0
+Wire Wire Line
+	6500 6625 6350 6625
+Wire Wire Line
+	6500 6725 6350 6725
+Wire Wire Line
+	6500 6825 6350 6825
+Wire Wire Line
+	6500 6925 6350 6925
+Wire Wire Line
+	6500 7025 6350 7025
+Wire Wire Line
+	6500 7125 6350 7125
+Wire Wire Line
+	6500 7225 6350 7225
+Wire Wire Line
+	6500 7325 6350 7325
+Entry Wire Line
+	6350 6625 6250 6525
+Entry Wire Line
+	6350 6725 6250 6625
+Entry Wire Line
+	6350 6825 6250 6725
+Entry Wire Line
+	6350 6925 6250 6825
+Entry Wire Line
+	6350 7025 6250 6925
+Entry Wire Line
+	6350 7125 6250 7025
+Entry Wire Line
+	6350 7225 6250 7125
+Entry Wire Line
+	6350 7325 6250 7225
+$Comp
+L power:GND #PWR0103
+U 1 1 60C3477D
+P 6425 7475
+F 0 "#PWR0103" H 6425 7225 50  0001 C CNN
+F 1 "GND" H 6425 7325 50  0000 C CNN
+F 2 "" H 6425 7475 50  0001 C CNN
+F 3 "" H 6425 7475 50  0001 C CNN
+	1    6425 7475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 7475 6425 7425
+Wire Wire Line
+	6425 7425 6500 7425
+$Comp
+L power:GND #PWR0104
+U 1 1 60C35B35
+P 7175 7475
+F 0 "#PWR0104" H 7175 7225 50  0001 C CNN
+F 1 "GND" H 7175 7325 50  0000 C CNN
+F 2 "" H 7175 7475 50  0001 C CNN
+F 3 "" H 7175 7475 50  0001 C CNN
+	1    7175 7475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7175 7475 7175 7425
+Wire Wire Line
+	7175 7425 7100 7425
+Text Label 6175 5250 0    50   ~ 0
+D7
+Text Label 6175 5350 0    50   ~ 0
+D6
+Text Label 6175 5450 0    50   ~ 0
+D5
+Text Label 6175 5550 0    50   ~ 0
+D4
+Text Label 6175 5650 0    50   ~ 0
+D3
+Text Label 6175 5750 0    50   ~ 0
+D2
+Text Label 6175 5850 0    50   ~ 0
+D1
+Text Label 6175 5950 0    50   ~ 0
+D0
+Entry Wire Line
+	6075 5350 6175 5250
+Entry Wire Line
+	6075 5450 6175 5350
+Entry Wire Line
+	6075 5550 6175 5450
+Entry Wire Line
+	6075 5650 6175 5550
+Entry Wire Line
+	6075 5750 6175 5650
+Entry Wire Line
+	6075 5850 6175 5750
+Entry Wire Line
+	6075 5950 6175 5850
+Entry Wire Line
+	6075 6050 6175 5950
+Wire Bus Line
+	6075 6400 6250 6400
+Wire Bus Line
+	7650 6350 7450 6350
+Wire Bus Line
+	6075 5350 6075 6400
+Wire Bus Line
+	6250 6400 6250 7225
+Wire Bus Line
+	7650 4450 7650 6350
+Wire Bus Line
+	7450 6350 7450 7225
+Text Notes 10725 1625 0    50   ~ 0
+2021/06/13
+Text Notes 11275 1625 0    50   ~ 0
+A4
+$EndSCHEMATC

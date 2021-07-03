@@ -1,0 +1,26 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.8)-1*%
+%TF.CreationDate,2021-02-13T13:18:40-08:00*%
+%TF.ProjectId,20210213_Projects_PassiveBalanceBoard,32303231-3032-4313-935f-50726f6a6563,A0*%
+%TF.SameCoordinates,PX5b5cac0PY99e0170*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (5.1.8)-1) date 2021-02-13 13:18:40*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X0Y0D02*
+X44450000Y0D01*
+X0Y56750000D02*
+X0Y0D01*
+X44450000Y56750000D02*
+X0Y56750000D01*
+X44450000Y0D02*
+X44450000Y56750000D01*
+M02*
