@@ -1,0 +1,371 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 4
+Title "the BMS Board - Root page"
+Date "2021-02-07"
+Rev "A2"
+Comp "simple-ee.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 4575 725  0    100  ~ 20
+DATE:
+Text Notes 6900 725  0    100  ~ 20
+DESCRIPTION:
+Text Notes 5125 725  0    100  ~ 20
+REVISION:
+Text Notes 8575 725  0    100  ~ 20
+REVISION CODE:
+Text Notes 4600 875  0    50   ~ 0
+2020/02/24
+Text Notes 5150 875  0    50   ~ 0
+A0
+Text Notes 5900 725  0    100  ~ 20
+CREATED BY:
+Text Notes 5925 875  0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 6925 875  0    50   ~ 0
+INITIAL RELEASE DESIGN
+Text Notes 8600 875  0    50   ~ 0
+20200224_PROJECTS_CELLMONITOR_A0_00001
+Wire Notes Line style solid
+	10375 550  10375 5325
+Wire Notes Line style solid
+	4575 550  4575 5325
+Wire Notes Line style solid
+	8575 550  8575 5325
+Wire Notes Line style solid
+	6900 550  6900 5325
+Wire Notes Line style solid
+	5900 550  5900 5325
+Wire Notes Line style solid
+	5125 550  5125 5325
+Wire Notes Line style solid
+	4575 750  10375 750 
+Wire Notes Line style solid
+	4575 925  10375 925 
+Wire Notes Line style solid
+	4575 550  10375 550 
+Wire Notes Line style solid
+	4575 5325 10375 5325
+$Sheet
+S 500  2500 900  1475
+U 5E1E2212
+F0 "MCU" 50
+F1 "MCU.sch" 50
+F2 "SDA" B R 1400 2575 50 
+F3 "SCL" B R 1400 2675 50 
+F4 "D0" O R 1400 2825 50 
+F5 "D1" O R 1400 2925 50 
+F6 "D2" O R 1400 3025 50 
+F7 "D3" O R 1400 3125 50 
+F8 "D4" O R 1400 3225 50 
+F9 "D5" O R 1400 3325 50 
+F10 "D6" O R 1400 3425 50 
+F11 "D7" O R 1400 3525 50 
+$EndSheet
+$Comp
+L 20200103_8SBMS_A0-rescue:8S_PASSIVE-Modules U101
+U 1 1 5E321DC4
+P 2450 4325
+F 0 "U101" H 2450 4700 60  0000 C CNN
+F 1 "8S_PASSIVE" H 2450 3675 25  0000 C CNN
+F 2 "Modules:8S_PASSIVE" V 1350 4275 60  0001 C CNN
+F 3 "" H 3050 5575 60  0001 C CNN
+F 4 "simple-ee.com" H 2425 3175 60  0001 C CNN "Manufacturer"
+F 5 "8S" H 2575 3300 60  0001 C CNN "P_Value"
+F 6 "0.2A-0.365A" H 2475 3400 60  0001 C CNN "P_Rating_U"
+F 7 "5R-10R" H 2575 3500 60  0001 C CNN "P_Tolerance"
+F 8 "T/H" H 2375 3300 60  0001 C CNN "Package"
+	1    2450 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2825 1600 2825
+Wire Wire Line
+	1400 2925 1600 2925
+Wire Wire Line
+	1400 3025 1600 3025
+Wire Wire Line
+	1400 3125 1600 3125
+Wire Wire Line
+	1400 3225 1600 3225
+Wire Wire Line
+	1400 3325 1600 3325
+Wire Wire Line
+	1400 3425 1600 3425
+Wire Wire Line
+	1400 3525 1600 3525
+Entry Wire Line
+	1600 2825 1700 2925
+Entry Wire Line
+	1600 2925 1700 3025
+Entry Wire Line
+	1600 3025 1700 3125
+Entry Wire Line
+	1600 3125 1700 3225
+Entry Wire Line
+	1600 3225 1700 3325
+Entry Wire Line
+	1600 3325 1700 3425
+Entry Wire Line
+	1600 3425 1700 3525
+Entry Wire Line
+	1600 3525 1700 3625
+Wire Wire Line
+	2150 4075 2000 4075
+Wire Wire Line
+	2000 4175 2150 4175
+Wire Wire Line
+	2150 4275 2000 4275
+Wire Wire Line
+	2150 4375 2000 4375
+Wire Wire Line
+	2150 4475 2000 4475
+Wire Wire Line
+	2150 4575 2000 4575
+Wire Wire Line
+	2150 4675 2000 4675
+Wire Wire Line
+	2000 4775 2150 4775
+Text Label 2000 4075 0    50   ~ 0
+D0
+Text Label 2000 4175 0    50   ~ 0
+D1
+Text Label 2000 4275 0    50   ~ 0
+D2
+Text Label 2000 4375 0    50   ~ 0
+D3
+Text Label 2000 4475 0    50   ~ 0
+D4
+Text Label 2000 4575 0    50   ~ 0
+D5
+Text Label 2000 4675 0    50   ~ 0
+D6
+Text Label 2000 4775 0    50   ~ 0
+D7
+$Comp
+L power:GND #PWR0101
+U 1 1 5E326A20
+P 2100 4950
+F 0 "#PWR0101" H 2100 4700 50  0001 C CNN
+F 1 "GND" H 2100 4800 50  0000 C CNN
+F 2 "" H 2100 4950 50  0001 C CNN
+F 3 "" H 2100 4950 50  0001 C CNN
+	1    2100 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4950 2100 4875
+Wire Wire Line
+	2100 4875 2150 4875
+Entry Wire Line
+	1900 3975 2000 4075
+Entry Wire Line
+	1900 4075 2000 4175
+Entry Wire Line
+	1900 4175 2000 4275
+Entry Wire Line
+	1900 4275 2000 4375
+Entry Wire Line
+	1900 4375 2000 4475
+Entry Wire Line
+	1900 4475 2000 4575
+Entry Wire Line
+	1900 4575 2000 4675
+Entry Wire Line
+	1900 4675 2000 4775
+Wire Bus Line
+	1900 3975 1700 3975
+Wire Wire Line
+	2750 4075 2925 4075
+Wire Wire Line
+	2750 4175 2925 4175
+Wire Wire Line
+	2750 4275 2925 4275
+Wire Wire Line
+	2750 4375 2925 4375
+Wire Wire Line
+	2750 4475 2925 4475
+Wire Wire Line
+	2750 4575 2925 4575
+Wire Wire Line
+	2750 4675 2925 4675
+Wire Wire Line
+	2750 4775 2925 4775
+$Comp
+L power:GND #PWR0102
+U 1 1 5E32ABF8
+P 2800 4950
+F 0 "#PWR0102" H 2800 4700 50  0001 C CNN
+F 1 "GND" H 2800 4800 50  0000 C CNN
+F 2 "" H 2800 4950 50  0001 C CNN
+F 3 "" H 2800 4950 50  0001 C CNN
+	1    2800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4950 2800 4875
+Wire Wire Line
+	2800 4875 2750 4875
+Text Label 3350 2825 0    50   ~ 0
+B1
+Text Label 3350 2925 0    50   ~ 0
+B2
+Text Label 3350 3025 0    50   ~ 0
+B3
+Text Label 3350 3125 0    50   ~ 0
+B4
+Text Label 3350 3225 0    50   ~ 0
+B5
+Text Label 3350 3325 0    50   ~ 0
+B6
+Text Label 3350 3425 0    50   ~ 0
+B7
+Text Label 3350 3525 0    50   ~ 0
+B8
+Text Label 2925 4075 2    50   ~ 0
+B1
+Text Label 2925 4175 2    50   ~ 0
+B2
+Text Label 2925 4275 2    50   ~ 0
+B3
+Text Label 2925 4375 2    50   ~ 0
+B4
+Text Label 2925 4475 2    50   ~ 0
+B5
+Text Label 2925 4575 2    50   ~ 0
+B6
+Text Label 2925 4675 2    50   ~ 0
+B7
+Text Label 2925 4775 2    50   ~ 0
+B8
+Entry Wire Line
+	2925 4075 3025 4175
+Entry Wire Line
+	2925 4175 3025 4275
+Entry Wire Line
+	2925 4275 3025 4375
+Entry Wire Line
+	2925 4375 3025 4475
+Entry Wire Line
+	2925 4475 3025 4575
+Entry Wire Line
+	2925 4575 3025 4675
+Entry Wire Line
+	2925 4675 3025 4775
+Entry Wire Line
+	2925 4775 3025 4875
+Entry Wire Line
+	3250 2725 3350 2825
+Entry Wire Line
+	3250 2825 3350 2925
+Entry Wire Line
+	3250 2925 3350 3025
+Entry Wire Line
+	3250 3025 3350 3125
+Entry Wire Line
+	3250 3125 3350 3225
+Entry Wire Line
+	3250 3225 3350 3325
+Entry Wire Line
+	3250 3325 3350 3425
+Entry Wire Line
+	3250 3425 3350 3525
+Wire Wire Line
+	3350 3525 3500 3525
+Wire Wire Line
+	3350 3425 3500 3425
+Wire Wire Line
+	3350 3325 3500 3325
+Wire Wire Line
+	3350 3225 3500 3225
+Wire Wire Line
+	3350 3125 3500 3125
+Wire Wire Line
+	3350 3025 3500 3025
+Wire Wire Line
+	3350 2925 3500 2925
+Wire Wire Line
+	3500 2825 3350 2825
+$Sheet
+S 3500 2425 550  1425
+U 5E20C295
+F0 "ADC" 50
+F1 "ADC.sch" 50
+F2 "SDA" B L 3500 2575 50 
+F3 "SCL" B L 3500 2675 50 
+F4 "BAT1" O L 3500 2825 50 
+F5 "BAT2" O L 3500 2925 50 
+F6 "BAT3" O L 3500 3025 50 
+F7 "BAT4" O L 3500 3125 50 
+F8 "BAT5" O L 3500 3225 50 
+F9 "BAT6" O L 3500 3325 50 
+F10 "BAT7" O L 3500 3425 50 
+F11 "BAT8" O L 3500 3525 50 
+$EndSheet
+Text Label 1600 2825 2    50   ~ 0
+D0
+Text Label 1600 2925 2    50   ~ 0
+D1
+Text Label 1600 3025 2    50   ~ 0
+D2
+Text Label 1600 3125 2    50   ~ 0
+D3
+Text Label 1600 3225 2    50   ~ 0
+D4
+Text Label 1600 3325 2    50   ~ 0
+D5
+Text Label 1600 3425 2    50   ~ 0
+D6
+Text Label 1600 3525 2    50   ~ 0
+D7
+Wire Bus Line
+	3025 3475 3250 3475
+Wire Wire Line
+	1400 2575 3500 2575
+Wire Wire Line
+	1400 2675 3500 2675
+$Sheet
+S 1725 900  1200 925 
+U 5E1654A1
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "VIN" I L 1725 1200 50 
+$EndSheet
+Wire Wire Line
+	1600 1200 1725 1200
+Text Label 1600 1200 0    50   ~ 0
+B8
+Text Notes 5150 1050 0    50   ~ 0
+A1
+Text Notes 4600 1050 0    50   ~ 0
+2020/06/27
+Text Notes 8600 1050 0    50   ~ 0
+20201216_PROJECTS_CELLMONITOR_A1_00002
+Text Notes 6925 1175 0    39   ~ 0
+1. ADDED 6PIN CONNECTOR FOR SPI
+Text Notes 4600 1225 0    50   ~ 0
+2021/02/07
+Text Notes 5150 1225 0    50   ~ 0
+A2
+Text Notes 6925 1375 0    39   ~ 0
+2. SWITCH D2 AND D11\n3. ADDED P204\n4. CHANGED P202 TO 5POS
+Text Notes 8600 1225 0    50   ~ 0
+20210207_PROJECTS_CELLMONITOR_A2_00003
+Wire Notes Line style solid
+	4575 1100 10375 1100
+Wire Bus Line
+	1900 3975 1900 4675
+Wire Bus Line
+	3250 2725 3250 3475
+Wire Bus Line
+	3025 3475 3025 4875
+Wire Bus Line
+	1700 2925 1700 3975
+$EndSCHEMATC

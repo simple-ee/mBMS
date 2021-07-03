@@ -1,0 +1,65 @@
+EESchema Schematic File Version 4
+LIBS:20191029_Project_Template-cache
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev "A0"
+Comp "Harman International"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 10700 775  0    100  ~ 20
+DATE:
+Text Notes 13025 775  0    100  ~ 20
+DESCRIPTION:
+Text Notes 11250 775  0    100  ~ 20
+REVISION:
+Text Notes 14700 775  0    100  ~ 20
+REVISION CODE:
+Text Notes 10725 925  0    50   ~ 0
+YYYY/MM/DD
+Text Notes 11275 925  0    50   ~ 0
+A0
+Text Notes 12025 775  0    100  ~ 20
+CREATED BY:
+Text Notes 12050 925  0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 13050 925  0    50   ~ 0
+INITIAL RELEASE DESIGN
+Text Notes 14725 925  0    50   ~ 0
+YYMMDD_PROJECTS_NAME_A0_00001
+Wire Notes Line style solid
+	10700 800  16400 800 
+Wire Notes Line style solid
+	16400 975  10700 975 
+Wire Notes Line style solid
+	10700 600  16400 600 
+Wire Notes Line style solid
+	14700 600  14700 2250
+Wire Notes Line style solid
+	13025 600  13025 2250
+Wire Notes Line style solid
+	12025 600  12025 2250
+Wire Notes Line style solid
+	11250 600  11250 2250
+Wire Notes Line style solid
+	10700 5375 16400 5375
+Wire Notes Line style solid
+	11250 2250 11250 5375
+Wire Notes Line style solid
+	16400 600  16400 5375
+Wire Notes Line style solid
+	10700 600  10700 5375
+Wire Notes Line style solid
+	12025 2250 12025 5375
+Wire Notes Line style solid
+	13025 2250 13025 5375
+Wire Notes Line style solid
+	14700 2250 14700 5375
+$EndSCHEMATC

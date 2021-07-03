@@ -1,0 +1,1060 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 2 4
+Title "the BMS Board - the Brains"
+Date "2021-02-07"
+Rev "A2"
+Comp "simple-ee.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU:ATMEGA328PB-AU U?
+U 1 1 5E1FC214
+P 5050 3850
+AR Path="/5E1FC214" Ref="U?"  Part="1" 
+AR Path="/5E1E2212/5E1FC214" Ref="U201"  Part="1" 
+F 0 "U201" H 4425 4525 60  0000 L CNN
+F 1 "ATMEGA328PB-AU" H 5475 3150 25  0000 L CNN
+F 2 "QFP:TQFP-32" H 4600 3950 60  0001 C CNN
+F 3 "" H 4600 3950 60  0001 C CNN
+F 4 "1V8-5V" H 5050 3850 60  0001 C CNN "P_Rating_U"
+F 5 "Atmega" H 5050 3850 60  0001 C CNN "Manufacturer"
+F 6 "MCU" H 5050 3850 60  0001 C CNN "P_Value"
+F 7 "TQFP" H 5050 3850 60  0001 C CNN "Package"
+F 8 "Value" H 5050 3850 60  0001 C CNN "P_Tolerance"
+	1    5050 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3150 4850 2950
+Wire Wire Line
+	4850 2950 4525 2950
+Wire Wire Line
+	4950 3150 4950 2850
+Wire Wire Line
+	4950 2850 4525 2850
+Text Label 4525 2950 0    50   ~ 0
+A_TX
+Text Label 4525 2850 0    50   ~ 0
+A_RX
+$Comp
+L Resistors_0603:ERA-3AEB103V R?
+U 1 1 5E1FC228
+P 5050 2475
+AR Path="/5E1FC228" Ref="R?"  Part="1" 
+AR Path="/5E1E2212/5E1FC228" Ref="R203"  Part="1" 
+F 0 "R203" V 5050 2475 50  0000 C CNN
+F 1 "ERA-3AEB103V" V 5150 2475 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 4980 2475 50  0001 C CNN
+F 3 "" V 5130 2475 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 5230 2575 60  0001 C CNN "Manufacturer"
+F 5 "10k" H 5100 2525 50  0000 L CNN "P_Value"
+F 6 "1/10W" V 5350 2775 60  0001 C CNN "P_Rating_U"
+F 7 "0.1%" H 5175 2400 25  0000 C CNN "P_Tolerance"
+F 8 "0603" H 5125 2450 25  0000 L CNN "Package"
+	1    5050 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3150 5050 2700
+NoConn ~ 5450 3150
+Wire Wire Line
+	5050 2300 5050 2325
+$Comp
+L Capacitor_0603:CL10B104KB8NNNC C?
+U 1 1 5E1FC237
+P 4275 2700
+AR Path="/5E1FC237" Ref="C?"  Part="1" 
+AR Path="/5E1E2212/5E1FC237" Ref="C204"  Part="1" 
+F 0 "C204" V 4125 2700 50  0000 C CNN
+F 1 "CL10B104KB8NNNC" H 4275 3000 50  0001 L CNN
+F 2 "Passives:C_0603_Handsolder" H 4275 2100 50  0001 C CNN
+F 3 "" H 4300 2800 50  0000 C CNN
+F 4 " 	Samsung Electro-Mechanics" H 4400 2900 50  0001 C CNN "Manufacturer"
+F 5 "0.1uF" V 4425 2700 50  0000 C CNN "P_Value"
+F 6 "50V" V 4225 2800 25  0000 C CNN "P_Rating_U"
+F 7 "X7R" H 4525 2350 50  0001 C CNN "P_Tolerance"
+F 8 "0603" V 4325 2800 25  0000 C CNN "Package"
+	1    4275 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4425 2700 5050 2700
+Connection ~ 5050 2700
+Wire Wire Line
+	5050 2700 5050 2625
+Wire Wire Line
+	4125 2700 3800 2700
+Wire Wire Line
+	4300 3900 4025 3900
+Text Label 4025 3900 0    50   ~ 0
+GND
+Wire Wire Line
+	5800 4100 6000 4100
+Text Label 6000 4100 2    50   ~ 0
++5V
+Wire Wire Line
+	5800 3800 6000 3800
+Text Label 6000 3800 2    50   ~ 0
+GND
+$Comp
+L power:+5V #PWR?
+U 1 1 5E1FC247
+P 5050 2300
+AR Path="/5E1FC247" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E1FC247" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 5050 2150 50  0001 C CNN
+F 1 "+5V" H 5050 2450 50  0000 C CNN
+F 2 "" H 5050 2300 50  0001 C CNN
+F 3 "" H 5050 2300 50  0001 C CNN
+	1    5050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4600 5400 4700
+Wire Wire Line
+	5400 4700 5550 4700
+Text Label 3800 2700 0    50   ~ 0
+DTR
+Wire Wire Line
+	5300 4600 5300 4800
+Wire Wire Line
+	5300 4800 5675 4800
+NoConn ~ 5800 4000
+NoConn ~ 5800 3700
+$Comp
+L Capacitor_0603:CL10B104KB8NNNC C?
+U 1 1 5E1FC26F
+P 6300 4125
+AR Path="/5E1FC26F" Ref="C?"  Part="1" 
+AR Path="/5E1E2212/5E1FC26F" Ref="C205"  Part="1" 
+F 0 "C205" H 6325 4225 50  0000 L CNN
+F 1 "CL10B104KB8NNNC" H 6300 4425 50  0001 L CNN
+F 2 "Passives:C_0603_Handsolder" H 6300 3525 50  0001 C CNN
+F 3 "" H 6325 4225 50  0000 C CNN
+F 4 " 	Samsung Electro-Mechanics" H 6425 4325 50  0001 C CNN "Manufacturer"
+F 5 "0.1uF" H 6400 4125 50  0000 L CNN "P_Value"
+F 6 "50V" H 6350 4050 25  0000 L CNN "P_Rating_U"
+F 7 "X7R" H 6550 3775 50  0001 C CNN "P_Tolerance"
+F 8 "0603" H 6350 4000 25  0000 L CNN "Package"
+	1    6300 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3900 6300 3900
+Wire Wire Line
+	6300 3900 6300 3975
+$Comp
+L power:GND #PWR?
+U 1 1 5E1FC277
+P 6300 4325
+AR Path="/5E1FC277" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E1FC277" Ref="#PWR0216"  Part="1" 
+F 0 "#PWR0216" H 6300 4075 50  0001 C CNN
+F 1 "GND" H 6300 4175 50  0000 C CNN
+F 2 "" H 6300 4325 50  0001 C CNN
+F 3 "" H 6300 4325 50  0001 C CNN
+	1    6300 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4325 6300 4275
+Wire Wire Line
+	4025 3800 4300 3800
+$Comp
+L power:+5V #PWR?
+U 1 1 5E1FC286
+P 6300 3825
+AR Path="/5E1FC286" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E1FC286" Ref="#PWR0215"  Part="1" 
+F 0 "#PWR0215" H 6300 3675 50  0001 C CNN
+F 1 "+5V" H 6300 3975 50  0000 C CNN
+F 2 "" H 6300 3825 50  0001 C CNN
+F 3 "" H 6300 3825 50  0001 C CNN
+	1    6300 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3825 6300 3900
+Connection ~ 6300 3900
+$Comp
+L Capacitor_0603:CL10B104KB8NNNC C?
+U 1 1 5E203C88
+P 3550 1150
+AR Path="/5E203C88" Ref="C?"  Part="1" 
+AR Path="/5E1E2212/5E203C88" Ref="C202"  Part="1" 
+F 0 "C202" H 3575 1250 50  0000 L CNN
+F 1 "CL10B104KB8NNNC" H 3550 1450 50  0001 L CNN
+F 2 "Passives:C_0603_Handsolder" H 3550 550 50  0001 C CNN
+F 3 "" H 3575 1250 50  0000 C CNN
+F 4 " 	Samsung Electro-Mechanics" H 3675 1350 50  0001 C CNN "Manufacturer"
+F 5 "0.1uF" H 3650 1150 50  0000 L CNN "P_Value"
+F 6 "50V" H 3600 1075 25  0000 L CNN "P_Rating_U"
+F 7 "X7R" H 3800 800 50  0001 C CNN "P_Tolerance"
+F 8 "0603" H 3600 1025 25  0000 L CNN "Package"
+	1    3550 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor_0603:CL10B104KB8NNNC C?
+U 1 1 5E203C93
+P 3975 1150
+AR Path="/5E203C93" Ref="C?"  Part="1" 
+AR Path="/5E1E2212/5E203C93" Ref="C203"  Part="1" 
+F 0 "C203" H 4000 1250 50  0000 L CNN
+F 1 "CL10B104KB8NNNC" H 3975 1450 50  0001 L CNN
+F 2 "Passives:C_0603_Handsolder" H 3975 550 50  0001 C CNN
+F 3 "" H 4000 1250 50  0000 C CNN
+F 4 " 	Samsung Electro-Mechanics" H 4100 1350 50  0001 C CNN "Manufacturer"
+F 5 "0.1uF" H 4075 1150 50  0000 L CNN "P_Value"
+F 6 "50V" H 4025 1075 25  0000 L CNN "P_Rating_U"
+F 7 "X7R" H 4225 800 50  0001 C CNN "P_Tolerance"
+F 8 "0603" H 4025 1025 25  0000 L CNN "Package"
+	1    3975 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E203C99
+P 3550 950
+AR Path="/5E203C99" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E203C99" Ref="#PWR0209"  Part="1" 
+F 0 "#PWR0209" H 3550 800 50  0001 C CNN
+F 1 "+5V" H 3550 1100 50  0000 C CNN
+F 2 "" H 3550 950 50  0001 C CNN
+F 3 "" H 3550 950 50  0001 C CNN
+	1    3550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E203C9F
+P 3975 950
+AR Path="/5E203C9F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E203C9F" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 3975 800 50  0001 C CNN
+F 1 "+5V" H 3975 1100 50  0000 C CNN
+F 2 "" H 3975 950 50  0001 C CNN
+F 3 "" H 3975 950 50  0001 C CNN
+	1    3975 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 950  3975 1000
+Wire Wire Line
+	3550 950  3550 1000
+$Comp
+L power:GND #PWR?
+U 1 1 5E203CA7
+P 3975 1375
+AR Path="/5E203CA7" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E203CA7" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 3975 1125 50  0001 C CNN
+F 1 "GND" H 3975 1225 50  0000 C CNN
+F 2 "" H 3975 1375 50  0001 C CNN
+F 3 "" H 3975 1375 50  0001 C CNN
+	1    3975 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3975 1375 3975 1300
+$Comp
+L power:GND #PWR?
+U 1 1 5E203CAE
+P 3550 1375
+AR Path="/5E203CAE" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E203CAE" Ref="#PWR0210"  Part="1" 
+F 0 "#PWR0210" H 3550 1125 50  0001 C CNN
+F 1 "GND" H 3550 1225 50  0000 C CNN
+F 2 "" H 3550 1375 50  0001 C CNN
+F 3 "" H 3550 1375 50  0001 C CNN
+	1    3550 1375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1300 3550 1375
+Text Label 5450 2975 2    50   ~ 0
+SDA
+Text Label 5450 2875 2    50   ~ 0
+SCL
+Wire Wire Line
+	5200 4600 5200 4900
+Wire Wire Line
+	5200 4900 5550 4900
+Wire Wire Line
+	5100 4600 5100 5000
+Wire Wire Line
+	5100 5000 5550 5000
+Wire Wire Line
+	5000 5100 5550 5100
+Wire Wire Line
+	5000 4600 5000 5100
+Wire Wire Line
+	4900 5200 5550 5200
+Wire Wire Line
+	4900 4600 4900 5200
+Wire Wire Line
+	4800 5300 5550 5300
+Wire Wire Line
+	4800 4600 4800 5300
+Wire Wire Line
+	4700 5400 5550 5400
+Wire Wire Line
+	4700 4600 4700 5400
+Text Label 5550 4700 2    50   ~ 0
+D7
+Text Label 4175 3600 0    50   ~ 0
+D6
+Text Label 5550 4900 2    50   ~ 0
+D5
+Text Label 5550 5000 2    50   ~ 0
+D4
+Text Label 5550 5100 2    50   ~ 0
+D3
+Text Label 5550 5200 2    50   ~ 0
+D2
+Text Label 5550 5300 2    50   ~ 0
+D1
+Text Label 5550 5400 2    50   ~ 0
+D0
+Text Label 4025 3800 0    50   ~ 0
++5V
+$Comp
+L Crystals:CB3-3I-16M0000 Y201
+U 1 1 5E29222D
+P 3375 4150
+F 0 "Y201" H 3375 4325 50  0000 C CNN
+F 1 "CB3-3I-16M0000" H 3275 4950 50  0001 C CNN
+F 2 "Crystals_sg:CB3" H 3175 4925 50  0001 C CNN
+F 3 "" H 3275 5025 50  0001 C CNN
+F 4 "CTS-Frequency Controls" H 3375 5125 50  0001 C CNN "Manufacturer"
+F 5 "16MHz" H 3375 3950 50  0000 C CNN "P_Value"
+F 6 "5V" H 3375 4150 50  0001 C CNN "P_Rating"
+F 7 "4-SMD" H 3575 5325 50  0001 C CNN "Package"
+	1    3375 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2945DE
+P 3725 4375
+AR Path="/5E2945DE" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E2945DE" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 3725 4125 50  0001 C CNN
+F 1 "GND" H 3725 4225 50  0000 C CNN
+F 2 "" H 3725 4375 50  0001 C CNN
+F 3 "" H 3725 4375 50  0001 C CNN
+	1    3725 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 4225 3725 4225
+Wire Wire Line
+	3725 4225 3725 4375
+$Comp
+L Capacitor_0603:CL10B104KB8NNNC C?
+U 1 1 5E295861
+P 2850 4175
+AR Path="/5E295861" Ref="C?"  Part="1" 
+AR Path="/5E1E2212/5E295861" Ref="C201"  Part="1" 
+F 0 "C201" H 2875 4275 50  0000 L CNN
+F 1 "CL10B104KB8NNNC" H 2850 4475 50  0001 L CNN
+F 2 "Passives:C_0603_Handsolder" H 2850 3575 50  0001 C CNN
+F 3 "" H 2875 4275 50  0000 C CNN
+F 4 " 	Samsung Electro-Mechanics" H 2975 4375 50  0001 C CNN "Manufacturer"
+F 5 "0.1uF" H 2950 4175 50  0000 L CNN "P_Value"
+F 6 "50V" H 2900 4100 25  0000 L CNN "P_Rating_U"
+F 7 "X7R" H 3100 3825 50  0001 C CNN "P_Tolerance"
+F 8 "0603" H 2900 4050 25  0000 L CNN "Package"
+	1    2850 4175
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 4100 3000 4100
+Wire Wire Line
+	3000 4100 3000 4000
+Wire Wire Line
+	3000 4000 2925 4000
+Wire Wire Line
+	2850 4000 2850 4025
+$Comp
+L power:GND #PWR?
+U 1 1 5E299CF0
+P 2850 4375
+AR Path="/5E299CF0" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E299CF0" Ref="#PWR0208"  Part="1" 
+F 0 "#PWR0208" H 2850 4125 50  0001 C CNN
+F 1 "GND" H 2850 4225 50  0000 C CNN
+F 2 "" H 2850 4375 50  0001 C CNN
+F 3 "" H 2850 4375 50  0001 C CNN
+	1    2850 4375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E29E7AF
+P 2925 3950
+AR Path="/5E29E7AF" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E29E7AF" Ref="#PWR0207"  Part="1" 
+F 0 "#PWR0207" H 2925 3800 50  0001 C CNN
+F 1 "+5V" H 2900 4100 50  0000 C CNN
+F 2 "" H 2925 3950 50  0001 C CNN
+F 3 "" H 2925 3950 50  0001 C CNN
+	1    2925 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2925 3950 2925 4000
+Connection ~ 2925 4000
+Wire Wire Line
+	2925 4000 2850 4000
+$Comp
+L Resistors_0603:ERA-3AEB103V R?
+U 1 1 5E2A653B
+P 1100 1575
+AR Path="/5E2A653B" Ref="R?"  Part="1" 
+AR Path="/5E1E2212/5E2A653B" Ref="R201"  Part="1" 
+F 0 "R201" V 1100 1575 50  0000 C CNN
+F 1 "ERA-3AEB103V" V 1200 1575 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 1030 1575 50  0001 C CNN
+F 3 "" V 1180 1575 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 1280 1675 60  0001 C CNN "Manufacturer"
+F 5 "10k" H 1150 1625 50  0000 L CNN "P_Value"
+F 6 "1/10W" V 1400 1875 60  0001 C CNN "P_Rating_U"
+F 7 "0.1%" H 1225 1500 25  0000 C CNN "P_Tolerance"
+F 8 "0603" H 1175 1550 25  0000 L CNN "Package"
+	1    1100 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Resistors_0603:ERA-3AEB103V R?
+U 1 1 5E2A6BBC
+P 1400 1575
+AR Path="/5E2A6BBC" Ref="R?"  Part="1" 
+AR Path="/5E1E2212/5E2A6BBC" Ref="R202"  Part="1" 
+F 0 "R202" V 1400 1575 50  0000 C CNN
+F 1 "ERA-3AEB103V" V 1500 1575 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 1330 1575 50  0001 C CNN
+F 3 "" V 1480 1575 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 1580 1675 60  0001 C CNN "Manufacturer"
+F 5 "10k" H 1450 1625 50  0000 L CNN "P_Value"
+F 6 "1/10W" V 1700 1875 60  0001 C CNN "P_Rating_U"
+F 7 "0.1%" H 1525 1500 25  0000 C CNN "P_Tolerance"
+F 8 "0603" H 1475 1550 25  0000 L CNN "Package"
+	1    1400 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5E2A75FA
+P 1400 1325
+AR Path="/5E2A75FA" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E2A75FA" Ref="#PWR0206"  Part="1" 
+F 0 "#PWR0206" H 1400 1175 50  0001 C CNN
+F 1 "+5V" H 1375 1475 50  0000 C CNN
+F 2 "" H 1400 1325 50  0001 C CNN
+F 3 "" H 1400 1325 50  0001 C CNN
+	1    1400 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1325 1400 1425
+$Comp
+L power:+5V #PWR?
+U 1 1 5E2A90B1
+P 1100 1325
+AR Path="/5E2A90B1" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E2A90B1" Ref="#PWR0205"  Part="1" 
+F 0 "#PWR0205" H 1100 1175 50  0001 C CNN
+F 1 "+5V" H 1075 1475 50  0000 C CNN
+F 2 "" H 1100 1325 50  0001 C CNN
+F 3 "" H 1100 1325 50  0001 C CNN
+	1    1100 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1325 1100 1425
+Wire Wire Line
+	1100 1725 1100 1850
+Wire Wire Line
+	1100 1850 825  1850
+Text Label 1275 1850 2    50   ~ 0
+SDA
+Wire Wire Line
+	1275 1850 1100 1850
+Connection ~ 1100 1850
+Text HLabel 825  1850 0    50   BiDi ~ 0
+SDA
+Wire Wire Line
+	1400 1725 1400 1950
+Wire Wire Line
+	1400 1950 825  1950
+Text HLabel 825  1950 0    50   BiDi ~ 0
+SCL
+Wire Wire Line
+	1400 1950 1575 1950
+Connection ~ 1400 1950
+Text Label 1575 1950 2    50   ~ 0
+SCL
+Text HLabel 8750 3625 2    50   Output ~ 0
+D0
+Text HLabel 8750 3725 2    50   Output ~ 0
+D1
+Text HLabel 8750 3825 2    50   Output ~ 0
+D2
+Text HLabel 8750 3925 2    50   Output ~ 0
+D3
+Text HLabel 8750 4025 2    50   Output ~ 0
+D4
+Text HLabel 8750 4125 2    50   Output ~ 0
+D5
+Text HLabel 8750 4225 2    50   Output ~ 0
+D6
+Text HLabel 8750 4325 2    50   Output ~ 0
+D7
+Wire Wire Line
+	8750 3625 8600 3625
+Wire Wire Line
+	8750 3725 8600 3725
+Wire Wire Line
+	8750 3825 8600 3825
+Wire Wire Line
+	8750 3925 8600 3925
+Wire Wire Line
+	8750 4025 8600 4025
+Wire Wire Line
+	8600 4125 8750 4125
+Wire Wire Line
+	8750 4225 8600 4225
+Wire Wire Line
+	8750 4325 8600 4325
+Text Label 8600 3625 0    50   ~ 0
+D0
+Text Label 8600 3725 0    50   ~ 0
+D1
+Text Label 8600 3825 0    50   ~ 0
+D2
+Text Label 8600 3925 0    50   ~ 0
+D3
+Text Label 8600 4025 0    50   ~ 0
+D4
+Text Label 8600 4125 0    50   ~ 0
+D5
+Text Label 8600 4225 0    50   ~ 0
+D6
+Text Label 8600 4325 0    50   ~ 0
+D7
+$Comp
+L Connectors:S5B-PH-SM4-TB(LF)(SN) P201
+U 1 1 5E14886A
+P 875 3725
+F 0 "P201" H 825 3875 50  0000 C CNN
+F 1 "S5B-PH-SM4-TB(LF)(SN)" H 825 3075 60  0001 C CNN
+F 2 "Connectors_sg:S5B-PH-SM4-TB" V 1475 4175 60  0001 C CNN
+F 3 "" H 825 3925 60  0001 C CNN
+F 4 "JST Sales America Inc." H 775 4025 60  0001 C CNN "Manufacturer"
+F 5 "5POS" H 825 3275 50  0000 C CNN "P_Value"
+F 6 "2A" H 1125 4175 50  0001 C CNN "P_Rating"
+F 7 "SMD" H 875 4325 60  0001 C CNN "Package"
+	1    875  3725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E1495FA
+P 1025 4125
+AR Path="/5E1495FA" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E1495FA" Ref="#PWR0202"  Part="1" 
+F 0 "#PWR0202" H 1025 3875 50  0001 C CNN
+F 1 "GND" H 1025 3975 50  0000 C CNN
+F 2 "" H 1025 4125 50  0001 C CNN
+F 3 "" H 1025 4125 50  0001 C CNN
+	1    1025 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  4075 1025 4075
+Wire Wire Line
+	1025 4075 1025 4125
+Wire Wire Line
+	975  3775 1175 3775
+$Comp
+L power:+5V #PWR?
+U 1 1 5E15505C
+P 1025 3600
+AR Path="/5E15505C" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E15505C" Ref="#PWR0201"  Part="1" 
+F 0 "#PWR0201" H 1025 3450 50  0001 C CNN
+F 1 "+5V" H 1000 3750 50  0000 C CNN
+F 2 "" H 1025 3600 50  0001 C CNN
+F 3 "" H 1025 3600 50  0001 C CNN
+	1    1025 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	975  3675 1025 3675
+Wire Wire Line
+	1025 3675 1025 3600
+Text Label 1175 3775 2    50   ~ 0
+DTR
+Text Label 1175 3875 2    50   ~ 0
+A_RX
+Text Label 1175 3975 2    50   ~ 0
+A_TX
+$Comp
+L power:GND #PWR?
+U 1 1 5E15942D
+P 1050 5675
+AR Path="/5E15942D" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E15942D" Ref="#PWR0204"  Part="1" 
+F 0 "#PWR0204" H 1050 5425 50  0001 C CNN
+F 1 "GND" H 1050 5525 50  0000 C CNN
+F 2 "" H 1050 5675 50  0001 C CNN
+F 3 "" H 1050 5675 50  0001 C CNN
+	1    1050 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 5675 1050 5600
+Wire Wire Line
+	1050 5600 1000 5600
+$Comp
+L power:+5V #PWR?
+U 1 1 5E15C934
+P 1050 4900
+AR Path="/5E15C934" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5E15C934" Ref="#PWR0203"  Part="1" 
+F 0 "#PWR0203" H 1050 4750 50  0001 C CNN
+F 1 "+5V" H 1025 5050 50  0000 C CNN
+F 2 "" H 1050 4900 50  0001 C CNN
+F 3 "" H 1050 4900 50  0001 C CNN
+	1    1050 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5200 1050 5200
+Wire Wire Line
+	1050 5200 1050 4950
+Text Label 1175 5300 2    50   ~ 0
+SDA1
+Text Label 1175 5400 2    50   ~ 0
+SCL1
+NoConn ~ 3075 4225
+Wire Wire Line
+	2850 4325 2850 4375
+Wire Wire Line
+	5250 3150 5250 2975
+Wire Wire Line
+	5250 2975 5450 2975
+Wire Wire Line
+	5150 3150 5150 2875
+Wire Wire Line
+	5150 2875 5450 2875
+Wire Wire Line
+	5800 4200 6150 4200
+Text Label 6150 4200 2    50   ~ 0
+SPI_SCK
+Wire Wire Line
+	4300 3600 4175 3600
+Wire Wire Line
+	4300 3500 4025 3500
+Text Label 5675 4800 2    50   ~ 0
+SPI_MOSI
+Text Label 4025 3500 0    50   ~ 0
+SPI_DC
+Text Label 4525 3050 0    50   ~ 0
+SPI_CS
+Wire Wire Line
+	4750 3150 4750 3050
+Wire Wire Line
+	4750 3050 4525 3050
+$Comp
+L 20200103_8SBMS_A0-rescue:S6B-PH-SM4-TB(LF)(SN)-Connectors P203
+U 1 1 5F6887EE
+P 900 6250
+AR Path="/5F6887EE" Ref="P203"  Part="1" 
+AR Path="/5E1E2212/5F6887EE" Ref="P203"  Part="1" 
+F 0 "P203" H 850 6400 50  0000 C CNN
+F 1 "S6B-PH-SM4-TB(LF)(SN)" H 1500 7475 60  0001 C CNN
+F 2 "Connectors_sg:S6B-PH-SM4-TB" H 1700 7325 60  0001 C CNN
+F 3 "" H 850 6450 60  0001 C CNN
+F 4 "JST Sales America Inc." H 800 6550 60  0001 C CNN "Manufacturer"
+F 5 "6POS" H 850 5700 50  0000 C CNN "P_Value"
+F 6 "2A" H 1150 6700 50  0001 C CNN "P_Rating"
+F 7 "SMD" H 900 6850 60  0001 C CNN "Package"
+F 8 "455-1753-1-ND" H 1250 6975 50  0001 C CNN "P_Digikey"
+	1    900  6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F68C78F
+P 1050 6150
+AR Path="/5F68C78F" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5F68C78F" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 1050 6000 50  0001 C CNN
+F 1 "+5V" H 1025 6300 50  0000 C CNN
+F 2 "" H 1050 6150 50  0001 C CNN
+F 3 "" H 1050 6150 50  0001 C CNN
+	1    1050 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 6200 1050 6200
+Wire Wire Line
+	1050 6200 1050 6150
+$Comp
+L power:GND #PWR?
+U 1 1 5F68F23A
+P 1050 6725
+AR Path="/5F68F23A" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5F68F23A" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 1050 6475 50  0001 C CNN
+F 1 "GND" H 1050 6575 50  0000 C CNN
+F 2 "" H 1050 6725 50  0001 C CNN
+F 3 "" H 1050 6725 50  0001 C CNN
+	1    1050 6725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 6700 1050 6700
+Wire Wire Line
+	1050 6700 1050 6725
+Wire Wire Line
+	1000 6300 1350 6300
+Wire Wire Line
+	1000 6400 1350 6400
+Wire Wire Line
+	1000 6500 1350 6500
+Wire Wire Line
+	1000 6600 1350 6600
+Text Label 1350 6300 2    50   ~ 0
+SPI_SCK
+Text Label 1350 6400 2    50   ~ 0
+SPI_MOSI
+Text Label 1350 6500 2    50   ~ 0
+SPI_DC
+Text Label 1350 6600 2    50   ~ 0
+SPI_CS
+Text Label 4025 3700 0    50   ~ 0
+SDA1
+Wire Wire Line
+	4025 3700 4300 3700
+Text Label 4025 4000 0    50   ~ 0
+SCL1
+Wire Wire Line
+	4025 4000 4300 4000
+$Comp
+L Resistors_0603:ERA-3AEB103V R?
+U 1 1 5F6B99DE
+P 1250 5125
+AR Path="/5F6B99DE" Ref="R?"  Part="1" 
+AR Path="/5E1E2212/5F6B99DE" Ref="R204"  Part="1" 
+F 0 "R204" V 1250 5125 50  0000 C CNN
+F 1 "ERA-3AEB103V" V 1350 5125 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 1180 5125 50  0001 C CNN
+F 3 "" V 1330 5125 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 1430 5225 60  0001 C CNN "Manufacturer"
+F 5 "10k" H 1300 5175 50  0000 L CNN "P_Value"
+F 6 "1/10W" V 1550 5425 60  0001 C CNN "P_Rating_U"
+F 7 "0.1%" H 1375 5050 25  0000 C CNN "P_Tolerance"
+F 8 "0603" H 1325 5100 25  0000 L CNN "Package"
+	1    1250 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5300 1250 5275
+Wire Wire Line
+	1000 5300 1250 5300
+$Comp
+L Resistors_0603:ERA-3AEB103V R?
+U 1 1 5F6BDD80
+P 1525 5125
+AR Path="/5F6BDD80" Ref="R?"  Part="1" 
+AR Path="/5E1E2212/5F6BDD80" Ref="R205"  Part="1" 
+F 0 "R205" V 1525 5125 50  0000 C CNN
+F 1 "ERA-3AEB103V" V 1625 5125 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 1455 5125 50  0001 C CNN
+F 3 "" V 1605 5125 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 1705 5225 60  0001 C CNN "Manufacturer"
+F 5 "10k" H 1575 5175 50  0000 L CNN "P_Value"
+F 6 "1/10W" V 1825 5425 60  0001 C CNN "P_Rating_U"
+F 7 "0.1%" H 1650 5050 25  0000 C CNN "P_Tolerance"
+F 8 "0603" H 1600 5100 25  0000 L CNN "Package"
+	1    1525 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 5400 1525 5275
+Wire Wire Line
+	1000 5400 1525 5400
+Wire Wire Line
+	1250 4975 1250 4950
+Wire Wire Line
+	1250 4950 1050 4950
+Connection ~ 1050 4950
+Wire Wire Line
+	1050 4950 1050 4900
+Wire Wire Line
+	1525 4975 1525 4950
+Wire Wire Line
+	1525 4950 1250 4950
+Connection ~ 1250 4950
+$Comp
+L Diodes:PRTR5V0U2X,215 D201
+U 1 1 5FDF0FEC
+P 825 3025
+F 0 "D201" V 675 2900 50  0000 L CNN
+F 1 "PRTR5V0U2X,215" V 950 2850 25  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 1475 3975 50  0001 C CNN
+F 3 "" H 825 3025 50  0001 C CNN
+F 4 "Nexperia USA Inc." H 1575 3975 60  0001 C CNN "Manufacturer"
+F 5 "TVS" H 1575 3725 60  0001 C CNN "P_Value"
+F 6 "5.5V" H 1575 3725 60  0001 C CNN "P_Tolerance"
+F 7 "6V" H 1575 3725 60  0001 C CNN "P_Rating"
+F 8 "SOT-143B" H 1575 3975 60  0001 C CNN "Package"
+	1    825  3025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diodes:PRTR5V0U2X,215 D201
+U 2 1 5FDF1E04
+P 1300 4150
+F 0 "D201" V 1150 4000 50  0000 L CNN
+F 1 "PRTR5V0U2X,215" V 1400 3975 25  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 1950 5100 50  0001 C CNN
+F 3 "" H 1300 4150 50  0001 C CNN
+F 4 "Nexperia USA Inc." H 2050 5100 60  0001 C CNN "Manufacturer"
+F 5 "TVS" H 2050 4850 60  0001 C CNN "P_Value"
+F 6 "5.5V" H 2050 4850 60  0001 C CNN "P_Tolerance"
+F 7 "6V" H 2050 4850 60  0001 C CNN "P_Rating"
+F 8 "SOT-143B" H 2050 5100 60  0001 C CNN "Package"
+	2    1300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diodes:PRTR5V0U2X,215 D201
+U 3 1 5FDF2836
+P 1675 4050
+F 0 "D201" V 1550 3925 50  0000 L CNN
+F 1 "PRTR5V0U2X,215" V 1775 3850 25  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-143" H 2325 5000 50  0001 C CNN
+F 3 "" H 1675 4050 50  0001 C CNN
+F 4 "Nexperia USA Inc." H 2425 5000 60  0001 C CNN "Manufacturer"
+F 5 "TVS" H 2425 4750 60  0001 C CNN "P_Value"
+F 6 "5.5V" H 2425 4750 60  0001 C CNN "P_Tolerance"
+F 7 "6V" H 2425 4750 60  0001 C CNN "P_Rating"
+F 8 "SOT-143B" H 2425 5000 60  0001 C CNN "Package"
+	3    1675 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FDF49BA
+P 825 2850
+AR Path="/5FDF49BA" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5FDF49BA" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 825 2700 50  0001 C CNN
+F 1 "+5V" H 800 3000 50  0000 C CNN
+F 2 "" H 825 2850 50  0001 C CNN
+F 3 "" H 825 2850 50  0001 C CNN
+	1    825  2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	825  2850 825  2875
+$Comp
+L power:GND #PWR?
+U 1 1 5FDF8683
+P 825 3150
+AR Path="/5FDF8683" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5FDF8683" Ref="#PWR0218"  Part="1" 
+F 0 "#PWR0218" H 825 2900 50  0001 C CNN
+F 1 "GND" H 825 3000 50  0000 C CNN
+F 2 "" H 825 3150 50  0001 C CNN
+F 3 "" H 825 3150 50  0001 C CNN
+	1    825  3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	825  3150 825  3125
+Wire Wire Line
+	1300 4000 1300 3975
+Wire Wire Line
+	975  3975 1300 3975
+Wire Wire Line
+	1675 3875 1675 3900
+Wire Wire Line
+	975  3875 1675 3875
+$Comp
+L power:GND #PWR?
+U 1 1 5FE17804
+P 1300 4300
+AR Path="/5FE17804" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5FE17804" Ref="#PWR0219"  Part="1" 
+F 0 "#PWR0219" H 1300 4050 50  0001 C CNN
+F 1 "GND" H 1300 4150 50  0000 C CNN
+F 2 "" H 1300 4300 50  0001 C CNN
+F 3 "" H 1300 4300 50  0001 C CNN
+	1    1300 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 4300 1300 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5FE1B76E
+P 1675 4300
+AR Path="/5FE1B76E" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/5FE1B76E" Ref="#PWR0220"  Part="1" 
+F 0 "#PWR0220" H 1675 4050 50  0001 C CNN
+F 1 "GND" H 1675 4150 50  0000 C CNN
+F 2 "" H 1675 4300 50  0001 C CNN
+F 3 "" H 1675 4300 50  0001 C CNN
+	1    1675 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 4300 1675 4150
+Wire Notes Line
+	550  2600 550  4525
+Wire Notes Line
+	550  4525 1975 4525
+Wire Notes Line
+	1975 4525 1975 3525
+Wire Notes Line
+	1975 3525 1175 3525
+Wire Notes Line
+	1175 3525 1175 2600
+Wire Notes Line
+	1175 2600 550  2600
+$Comp
+L Connectors:S2B-PH-SM4-TB(LF)(SN) P204
+U 1 1 601E973F
+P 900 7225
+F 0 "P204" H 850 7400 50  0000 C CNN
+F 1 "S2B-PH-SM4-TB(LF)(SN)" H 850 6575 50  0001 C CNN
+F 2 "Connectors_sg:S2B-PH-SM4-TB(LF)(SN)" V 1500 7675 60  0001 C CNN
+F 3 "" H 850 7425 60  0001 C CNN
+F 4 "JST Sales America Inc." H 800 7525 60  0001 C CNN "Manufacturer"
+F 5 "2POS" H 850 7050 50  0000 C CNN "P_Value"
+F 6 "2A" H 1150 7675 50  0001 C CNN "P_Rating"
+F 7 "SMD" H 900 7825 60  0001 C CNN "Package"
+	1    900  7225
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 601EF161
+P 1050 7325
+AR Path="/601EF161" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/601EF161" Ref="#PWR0221"  Part="1" 
+F 0 "#PWR0221" H 1050 7075 50  0001 C CNN
+F 1 "GND" H 1050 7175 50  0000 C CNN
+F 2 "" H 1050 7325 50  0001 C CNN
+F 3 "" H 1050 7325 50  0001 C CNN
+	1    1050 7325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 7275 1050 7275
+Wire Wire Line
+	1050 7275 1050 7325
+Wire Wire Line
+	5800 3500 6050 3500
+Text Label 6050 3500 2    50   ~ 0
+BRST
+Text Label 1800 7175 2    50   ~ 0
+BRST
+$Comp
+L Connectors:S5B-PH-SM4-TB(LF)(SN) P202
+U 1 1 60221736
+P 900 5250
+F 0 "P202" H 850 5400 50  0000 C CNN
+F 1 "S5B-PH-SM4-TB(LF)(SN)" H 850 4600 60  0001 C CNN
+F 2 "Connectors_sg:S5B-PH-SM4-TB" V 1500 5700 60  0001 C CNN
+F 3 "" H 850 5450 60  0001 C CNN
+F 4 "JST Sales America Inc." H 800 5550 60  0001 C CNN "Manufacturer"
+F 5 "5POS" H 850 4800 50  0000 C CNN "P_Value"
+F 6 "2A" H 1150 5700 50  0001 C CNN "P_Rating"
+F 7 "SMD" H 900 5850 60  0001 C CNN "Package"
+	1    900  5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 5500 1350 5500
+Text Label 3925 4200 0    50   ~ 0
+OCP_TRIG
+Wire Wire Line
+	3675 4100 4300 4100
+Wire Wire Line
+	4300 4200 3925 4200
+NoConn ~ 5350 3150
+Text Label 1350 5500 2    50   ~ 0
+OCP_TRIG
+$Comp
+L Resistors_0603:RR0816P-102-D R206
+U 1 1 602A8CEB
+P 1250 7175
+F 0 "R206" V 1250 7175 50  0000 C CNN
+F 1 "RR0816P-102-D" V 1350 7175 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 1180 7175 50  0001 C CNN
+F 3 "" V 1330 7175 50  0000 C CNN
+F 4 "Susumu" V 1430 7275 60  0001 C CNN "Manufacturer"
+F 5 "1k" V 1150 7175 50  0000 C CNN "P_Value"
+F 6 "1/16W" V 1550 7475 60  0001 C CNN "P_Rating_U"
+F 7 "0.5%" V 1375 7175 25  0000 C CNN "P_Tolerance"
+F 8 "0603" V 1325 7175 25  0000 C CNN "Package"
+	1    1250 7175
+	0    1    1    0   
+$EndComp
+$Comp
+L Capacitor_0603:CL10B104KB8NNNC C?
+U 1 1 602AC05D
+P 1575 7375
+AR Path="/602AC05D" Ref="C?"  Part="1" 
+AR Path="/5E1E2212/602AC05D" Ref="C206"  Part="1" 
+F 0 "C206" H 1600 7475 50  0000 L CNN
+F 1 "CL10B104KB8NNNC" H 1575 7675 50  0001 L CNN
+F 2 "Passives:C_0603_Handsolder" H 1575 6775 50  0001 C CNN
+F 3 "" H 1600 7475 50  0000 C CNN
+F 4 " 	Samsung Electro-Mechanics" H 1700 7575 50  0001 C CNN "Manufacturer"
+F 5 "0.1uF" H 1675 7375 50  0000 L CNN "P_Value"
+F 6 "50V" H 1625 7300 25  0000 L CNN "P_Rating_U"
+F 7 "X7R" H 1825 7025 50  0001 C CNN "P_Tolerance"
+F 8 "0603" H 1625 7250 25  0000 L CNN "Package"
+	1    1575 7375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 7175 1575 7175
+Wire Wire Line
+	1575 7175 1575 7225
+Wire Wire Line
+	1000 7175 1100 7175
+Wire Wire Line
+	1800 7175 1575 7175
+Connection ~ 1575 7175
+$Comp
+L power:GND #PWR?
+U 1 1 602D9D56
+P 1575 7575
+AR Path="/602D9D56" Ref="#PWR?"  Part="1" 
+AR Path="/5E1E2212/602D9D56" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 1575 7325 50  0001 C CNN
+F 1 "GND" H 1575 7425 50  0000 C CNN
+F 2 "" H 1575 7575 50  0001 C CNN
+F 3 "" H 1575 7575 50  0001 C CNN
+	1    1575 7575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1575 7575 1575 7525
+NoConn ~ 5800 3600
+$EndSCHEMATC
