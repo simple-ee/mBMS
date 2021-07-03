@@ -60,6 +60,8 @@ and the external world.
 
 ### The BMS Board
 
+[kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20BMS%20Board)
+
 #### Rendered PCB
 <img src="images/20200103_8SBMS_A2_00003.png" width="30%">
 
@@ -84,6 +86,8 @@ Item | Description
 5 | External action button. Default state is for reset fault condition
 
 ### The Passive Balance Board
+
+[kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20Passive%20Balance%20Board)
 
 #### Rendered PCB
 <img src="images/20190708_PassiveBoard.png" width="30%">
