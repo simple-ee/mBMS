@@ -21,18 +21,29 @@ this will help a lot of people and want to give back.  Also smarter people than
 me could take this design and help optomize the code and design and make this a
 community BMS.
 
-## SETUP
+## the Table of Contents
+1. [the Setup](#thesetup)
+    1. [Software/Bootloader](#software)
+    2. [Wiring and Connection](#connect)
+2. [Pinout and Block Diagram](#pinout)
+3. [Board Information](#information)
+    1. [the Protection Board](#theProtectionBoard)
+    2. [the BMS Board](#theBMSBoard)
+    3. [the Passive Board](#thePassiveBoard)
+    4. [the Display](#display)
 
-### Software/Bootloader
+## the SETUP <a name="thesetup"></a>
+
+### Software/Bootloader <a name="software"></a>
 [Software Setup](https://github.com/simple-ee/mBMS/tree/main/Setup)
 
-### Wiring and Connection
+### Wiring and Connection <a name="connect"></a>
 
-## Pinout and Block Diagram
+## Pinout and Block Diagram <a name="pinout"></a>
 
-## Board information
+## Board information <a name="information"></a>
 
-### The Protection board
+### the Protection board <a name="theProtectionBoard"></a>
 
 [kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20Protection%20Board)
 
@@ -58,7 +69,7 @@ and the external world.
     8 | Two I2C ports, one to act as an internal COM for adc and display, andsecond one to act as external COM to relay information to BMS board
     9 | 125A fuse that will act as the short circuit protection with a breaking capacity of 1kA.
 
-### The BMS Board
+### the BMS Board <a name="theBMSBoard"></a>
 
 [kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20BMS%20Board)
 
@@ -85,7 +96,7 @@ Item | Description
 4 | Can be powered via the battery pack or external power source
 5 | External action button. Default state is for reset fault condition
 
-### The Passive Balance Board
+### the Passive Balance Board <a name="thePassiveBoard"></a>
 
 [kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20Passive%20Balance%20Board)
 
@@ -117,7 +128,7 @@ https://www.digikey.com/en/products/detail/vishay-dale-thin-film/THJP0612AST1/11
 
 
 
-### the Display (optional)
+### the Display (optional) <a name="display"></a>
 <img src="images/tftScreen.jpg" width="30%">
 
 Currently the SoC is not an implemented function its just a placeholder.  But if
