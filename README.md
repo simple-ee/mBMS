@@ -96,3 +96,6 @@ Item | Description
 #### Actual PCB
 <img src="images/Balance_Board.jpg" width="30%">
 
+### the Display (optional)
+<img src="images/tftScreen.jpg" width="30%">
+
