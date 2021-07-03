@@ -124,3 +124,11 @@ Currently the SoC is not an implemented function its just a placeholder.  But if
 anyone is willing to help out with this SoC code section then that would be 
 awesome as I'm still not sure the best way to implement this.
 
+The screen is to be used with the BMS board.  the Protection does not have 
+the ability to use a SPI TFT display but if you use it on its own, then you can
+add an I2C oled display because the secondary I2C will not be used.
+
+Here is a link to the tft display that I used.
+https://www.adafruit.com/product/4383
+
+
