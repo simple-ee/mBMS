@@ -34,6 +34,8 @@ community BMS.
 
 ### The Protection board
 
+[kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20Protection%20Board)
+
 #### Rendered PCB
 <img src="images/20190720_Project_OCP-OVP-UVP.png" width="30%">
 
