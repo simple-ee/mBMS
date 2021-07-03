@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 1 5
+Title "the Protection Board - Root Page"
+Date "2021-07-02"
+Rev "A5"
+Comp "simple-ee.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Notes Line style solid
+	4650 600  4650 5375
+Wire Notes Line style solid
+	10350 600  10350 5375
+Wire Notes Line style solid
+	4650 5375 10350 5375
+Wire Notes Line style solid
+	4650 600  10350 600 
+Wire Notes Line style solid
+	10350 975  4650 975 
+Wire Notes Line style solid
+	4650 800  10350 800 
+Text Notes 8675 925  0    50   ~ 0
+20190909_PROJECTS_OCP_OVP_A0_00001
+Text Notes 7000 925  0    50   ~ 0
+INITIAL RELEASE DESIGN
+Text Notes 6000 925  0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 5975 775  0    100  ~ 20
+CREATED BY:
+Text Notes 5225 925  0    50   ~ 0
+A0
+Text Notes 4675 925  0    50   ~ 0
+2019/09/09
+Text Notes 8650 775  0    100  ~ 20
+REVISION CODE:
+Text Notes 5200 775  0    100  ~ 20
+REVISION:
+Text Notes 6975 775  0    100  ~ 20
+DESCRIPTION:
+Text Notes 4650 775  0    100  ~ 20
+DATE:
+$Sheet
+S 1825 1300 1500 1675
+U 5D33FBEB
+F0 "MCU" 50
+F1 "Sheet-MCU.sch" 50
+F2 "DTR" B L 1825 2400 50 
+F3 "TX_M" O L 1825 2300 50 
+F4 "RX_M" I L 1825 2200 50 
+F5 "I_OUT" I R 3325 1500 50 
+F6 "SDA1" B L 1825 2075 50 
+F7 "SCL1" B L 1825 1975 50 
+F8 "GATE_LOAD" O R 3325 1850 50 
+F9 "CHRG_ON" O R 3325 1625 50 
+F10 "VIN" I R 3325 2100 50 
+F11 "OCP_TRIG" O L 1825 2550 50 
+$EndSheet
+Text Label 3375 2100 0    50   ~ 0
+VIN
+Text Label 1525 3950 0    50   ~ 0
+VIN
+Wire Wire Line
+	1850 3950 1525 3950
+$Sheet
+S 1850 3550 1475 900 
+U 5D37C9A3
+F0 "Sheet - Power" 50
+F1 "Power.sch" 50
+F2 "VIN" I L 1850 3950 50 
+F3 "VOUT" I L 1850 4175 50 
+$EndSheet
+Wire Wire Line
+	1350 1975 1825 1975
+Wire Wire Line
+	1350 2075 1825 2075
+Wire Wire Line
+	1350 2400 1825 2400
+Wire Wire Line
+	1350 2300 1825 2300
+Wire Wire Line
+	1350 2200 1825 2200
+Wire Wire Line
+	3375 2000 3575 2000
+$Sheet
+S 3575 1300 950  1675
+U 5D351848
+F0 "PowerFets" 50
+F1 "Sheet - Power FETS.sch" 50
+F2 "I_OUT" O L 3575 1500 50 
+F3 "VOUT" O L 3575 2000 50 
+F4 "VIN" O L 3575 2100 50 
+F5 "GATE_LOAD" I L 3575 1850 50 
+F6 "CHRG_ON" I L 3575 1625 50 
+$EndSheet
+Wire Notes Line style solid
+	5200 600  5200 5375
+Wire Notes Line style solid
+	5975 600  5975 5375
+Wire Notes Line style solid
+	6975 600  6975 5375
+Wire Notes Line style solid
+	8650 600  8650 5375
+$Sheet
+S 550  1300 800  1675
+U 5D3D6AE6
+F0 "Sheet - Input Connector" 50
+F1 "InputConnector.sch" 50
+F2 "DTR" I R 1350 2400 50 
+F3 "TX_M" I R 1350 2300 50 
+F4 "RX_M" O R 1350 2200 50 
+F5 "SDA1" B R 1350 2075 50 
+F6 "SCL1" B R 1350 1975 50 
+F7 "OCP_TRIG" I R 1350 2550 50 
+$EndSheet
+Text Notes 4675 1100 0    50   ~ 0
+2019/11/19
+Text Notes 5225 1100 0    50   ~ 0
+A1
+Text Notes 6000 1100 0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 7000 1100 0    50   ~ 0
+1. Added ADS1114 for voltage rail reading\n
+Text Notes 8675 1100 0    50   ~ 0
+20191119_PROJECTS_OCP_OVP_A1_00002
+Text Notes 7000 1175 0    50   ~ 0
+2. Changed R204 from 3.09M to 1.4M
+Text Notes 7000 1250 0    50   ~ 0
+3. Added TVS diode D301 DESD34VS2S0-7 
+Wire Notes Line style solid
+	10350 1275 4650 1275
+Text Notes 4675 1400 0    50   ~ 0
+2020/07/18
+Text Notes 5225 1400 0    50   ~ 0
+A2
+Text Notes 6000 1400 0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 7000 1825 0    43   ~ 0
+1. REPLACED ADS1114 WITH ADS1119\n2. REMOVED 1.25V REFERENCE IC\n3. ADDED R202 AND R203 FOR CURRENT SENSE\n4. REPLACED ACS781 WITH ACS780\n5. SWITCHED VOLTAGE RAIL TO 5V\n6. ADDED 16MHz OSCILLATOR Y201\n7. REPLACED R501 33.1k WITH 88.7k
+Text Notes 8675 1400 0    50   ~ 0
+20200718_PROJECTS_OCP_OVP_A2_00003
+Wire Wire Line
+	3325 1850 3575 1850
+Wire Wire Line
+	3325 1500 3575 1500
+Wire Wire Line
+	3325 1625 3575 1625
+Text Label 3375 2000 0    50   ~ 0
+VOUT
+Wire Wire Line
+	1525 4175 1850 4175
+Text Label 1525 4175 0    50   ~ 0
+VOUT
+Wire Wire Line
+	3325 2100 3575 2100
+Text Notes 8675 2025 0    50   ~ 0
+20201017_PROJECTS_OCP_OVP_A3_00004
+Text Notes 4675 2025 0    50   ~ 0
+2020/10/17
+Text Notes 5225 2025 0    50   ~ 0
+A3
+Text Notes 6025 2025 0    50   ~ 0
+STEVEN GUZMAN
+Wire Notes Line style solid
+	10350 1900 4650 1900
+Text Notes 7000 2525 0    43   ~ 0
+1. ADDED D501, D502\n2. REMOVED DIFFERENTIAL MEASUREMENT\n3. CHANGED R205 AND R204 \n4. ADDED R208, R209\n5. CHANGED L501\n6. CHANGED C504, C505\n7. ADDED L301\n8. REMOVED R403
+Wire Notes Line style solid
+	10350 2550 4650 2550
+Text Notes 5225 2675 0    50   ~ 0
+A4
+Text Notes 6025 2675 0    50   ~ 0
+STEVEN GUZMAN
+Text Notes 7000 2900 0    43   ~ 0
+1. REMOVED F401-F403\n2. ADDED F401 125A\n3. UPDATED P405,P407 TO 12MM PAD
+Wire Wire Line
+	1825 2550 1350 2550
+Text Notes 8625 2700 0    50   ~ 0
+20210213_PROJECTS_OCP_OVP_A4_00005
+$EndSCHEMATC

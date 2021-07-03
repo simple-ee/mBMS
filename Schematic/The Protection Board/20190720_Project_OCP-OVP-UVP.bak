@@ -1,0 +1,80 @@
+EESchema Schematic File Version 4
+LIBS:20190720_Project_OCP-OVP-UVP-cache
+EELAYER 29 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 5
+Title "Battery Protection OCP/OVP/UVP - Root Page"
+Date "2019-07-20"
+Rev "A0"
+Comp "simple-ee.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4100 3225 1500 1675
+U 5D33FBEB
+F0 "MCU" 50
+F1 "Sheet-MCU.sch" 50
+F2 "DTR" B L 4100 4325 50 
+F3 "TX_M" O L 4100 4225 50 
+F4 "RX_M" I L 4100 4125 50 
+F5 "SDA" B L 4100 4000 50 
+F6 "SCL" B L 4100 3900 50 
+F7 "POUT_G" I R 5600 3675 50 
+F8 "G1" I R 5600 3775 50 
+F9 "VIN" I R 5600 3925 50 
+$EndSheet
+$Sheet
+S 6100 3225 950  1675
+U 5D351848
+F0 "PowerFets" 50
+F1 "Sheet - Power FETS.sch" 50
+F2 "POUT_G" O L 6100 3675 50 
+F3 "G1" I L 6100 3775 50 
+F4 "VIN" O L 6100 3925 50 
+$EndSheet
+Wire Wire Line
+	5600 3775 6100 3775
+Wire Wire Line
+	5600 3675 6100 3675
+Wire Wire Line
+	5600 3925 6100 3925
+$Sheet
+S 2125 3225 800  1675
+U 5D3D6AE6
+F0 "Sheet - Input Connector" 50
+F1 "InputConnector.sch" 50
+F2 "SDA" B R 2925 4000 50 
+F3 "SCL" B R 2925 3900 50 
+F4 "DTR" I R 2925 4325 50 
+F5 "TX_M" I R 2925 4225 50 
+F6 "RX_M" O R 2925 4125 50 
+$EndSheet
+Wire Wire Line
+	2925 4125 4100 4125
+Wire Wire Line
+	2925 4225 4100 4225
+Wire Wire Line
+	2925 4325 4100 4325
+Wire Wire Line
+	2925 4000 4100 4000
+Wire Wire Line
+	2925 3900 4100 3900
+$Sheet
+S 4125 1275 1475 900 
+U 5D37C9A3
+F0 "Sheet - Power" 50
+F1 "Power.sch" 50
+F2 "VIN" I L 4125 1675 50 
+$EndSheet
+Wire Wire Line
+	4125 1675 3800 1675
+Text Label 3800 1675 0    50   ~ 0
+VIN
+Text Label 5800 3925 0    50   ~ 0
+VIN
+$EndSCHEMATC

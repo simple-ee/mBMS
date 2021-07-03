@@ -1,0 +1,208 @@
+EESchema Schematic File Version 4
+LIBS:20190720_Project_OCP-OVP-UVP-cache
+EELAYER 29 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 4 5
+Title "Battery Protection OCP/OVP/UVP - Root Page"
+Date ""
+Rev "A0"
+Comp "simple-ee.com"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connectors:S4B-PH-SM4-TB(LF)(SN) P401
+U 1 1 5D3D70C8
+P 3550 3850
+F 0 "P401" H 3500 4000 50  0000 C CNN
+F 1 "S4B-PH-SM4-TB(LF)(SN)" H 3500 3200 50  0001 C CNN
+F 2 "Connectors_sg:S4B-PH-SM4-TB" V 4150 4300 60  0001 C CNN
+F 3 "" H 3500 4050 60  0001 C CNN
+F 4 "JST Sales America Inc." H 3450 4150 60  0001 C CNN "Manufacturer"
+F 5 "4POS" H 3500 3500 50  0000 C CNN "P_Value"
+F 6 "2A" H 3800 4300 50  0001 C CNN "P_Rating"
+F 7 "SMD" H 3550 4450 60  0001 C CNN "Package"
+	1    3550 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3900 3900 3900
+Wire Wire Line
+	3650 4000 3900 4000
+$Comp
+L power:GND #PWR0402
+U 1 1 5D3D7994
+P 3700 4200
+F 0 "#PWR0402" H 3700 3950 50  0001 C CNN
+F 1 "GND" H 3700 4050 50  0000 C CNN
+F 2 "" H 3700 4200 50  0001 C CNN
+F 3 "" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4100 3700 4100
+Wire Wire Line
+	3700 4100 3700 4200
+Wire Wire Line
+	3700 3700 3700 3800
+Wire Wire Line
+	3700 3800 3650 3800
+Text Label 3900 3900 2    50   ~ 0
+SDA
+Text Label 3900 4000 2    50   ~ 0
+SCL
+Text HLabel 5775 3800 2    50   BiDi ~ 0
+SDA
+Text HLabel 5775 3900 2    50   BiDi ~ 0
+SCL
+Text Label 5525 3800 0    50   ~ 0
+SDA
+Text Label 5525 3900 0    50   ~ 0
+SCL
+$Comp
+L Resistors_0603:ERA-3AEB103V R402
+U 1 1 5D3D92E6
+P 5400 3475
+F 0 "R402" V 5400 3375 50  0000 L CNN
+F 1 "ERA-3AEB103V" V 5500 3475 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 5330 3475 50  0001 C CNN
+F 3 "" V 5480 3475 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 5580 3575 60  0001 C CNN "Manufacturer"
+F 5 "10k" H 5450 3525 50  0000 L CNN "P_Value"
+F 6 "1/10W" V 5700 3775 60  0001 C CNN "P_Rating_U"
+F 7 "0.1%" H 5475 3400 25  0000 L CNN "P_Tolerance"
+F 8 "0603" H 5475 3450 25  0000 L CNN "Package"
+	1    5400 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3625 5400 3800
+Wire Wire Line
+	5400 3800 5775 3800
+Wire Wire Line
+	5400 3250 5400 3325
+$Comp
+L Resistors_0603:ERA-3AEB103V R401
+U 1 1 5D3DA9BE
+P 5125 3475
+F 0 "R401" V 5125 3375 50  0000 L CNN
+F 1 "ERA-3AEB103V" V 5225 3475 50  0001 C CNN
+F 2 "Passives:R_0603_Handsolder" V 5055 3475 50  0001 C CNN
+F 3 "" V 5205 3475 50  0000 C CNN
+F 4 "Panasonic Electronic Components" V 5305 3575 60  0001 C CNN "Manufacturer"
+F 5 "10k" H 5175 3525 50  0000 L CNN "P_Value"
+F 6 "1/10W" V 5425 3775 60  0001 C CNN "P_Rating_U"
+F 7 "0.1%" H 5200 3400 25  0000 L CNN "P_Tolerance"
+F 8 "0603" H 5200 3450 25  0000 L CNN "Package"
+	1    5125 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5125 3625 5125 3900
+Wire Wire Line
+	5125 3900 5775 3900
+Wire Wire Line
+	5125 3250 5125 3325
+$Comp
+L Connectors:S5B-PH-SM4-TB(LF)(SN) P402
+U 1 1 5D3DBBDC
+P 3550 5050
+F 0 "P402" H 3550 5200 50  0000 R CNN
+F 1 "S5B-PH-SM4-TB(LF)(SN)" H 3500 4400 60  0001 C CNN
+F 2 "Connectors_sg:S5B-PH-SM4-TB" V 4150 5500 60  0001 C CNN
+F 3 "" H 3500 5250 60  0001 C CNN
+F 4 "JST Sales America Inc." H 3450 5350 60  0001 C CNN "Manufacturer"
+F 5 "5POS" H 3600 4600 50  0000 R CNN "P_Value"
+F 6 "2A" H 3800 5500 50  0001 C CNN "P_Rating"
+F 7 "SMD" H 3550 5650 60  0001 C CNN "Package"
+	1    3550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0403
+U 1 1 5D3DD1D0
+P 3700 5500
+F 0 "#PWR0403" H 3700 5250 50  0001 C CNN
+F 1 "GND" H 3700 5350 50  0000 C CNN
+F 2 "" H 3700 5500 50  0001 C CNN
+F 3 "" H 3700 5500 50  0001 C CNN
+	1    3700 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5400 3700 5400
+Wire Wire Line
+	3700 5400 3700 5500
+Wire Wire Line
+	3650 5300 3900 5300
+Text Label 3900 5300 2    50   ~ 0
++2V7
+Wire Wire Line
+	3650 5200 3900 5200
+Wire Wire Line
+	3650 5100 3900 5100
+Wire Wire Line
+	3650 5000 3900 5000
+Text Label 3900 5200 2    50   ~ 0
+RX_M
+Text Label 3900 5100 2    50   ~ 0
+TX_M
+Text Label 3900 5000 2    50   ~ 0
+DTR
+Text HLabel 5750 5000 2    50   Input ~ 0
+DTR
+Text HLabel 5750 5100 2    50   Input ~ 0
+TX_M
+Text HLabel 5750 5200 2    50   Output ~ 0
+RX_M
+Wire Wire Line
+	5750 5000 5475 5000
+Wire Wire Line
+	5750 5100 5475 5100
+Wire Wire Line
+	5750 5200 5475 5200
+Text Label 5475 5000 0    50   ~ 0
+DTR
+Text Label 5475 5100 0    50   ~ 0
+TX_M
+Text Label 5475 5200 0    50   ~ 0
+RX_M
+$Comp
+L power:+2V7 #PWR0107
+U 1 1 5D39C6E5
+P 5125 3250
+F 0 "#PWR0107" H 5125 3100 50  0001 C CNN
+F 1 "+2V7" H 5100 3400 50  0000 C CNN
+F 2 "" H 5125 3250 50  0001 C CNN
+F 3 "" H 5125 3250 50  0001 C CNN
+	1    5125 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+2V7 #PWR0108
+U 1 1 5D39CB3E
+P 5400 3250
+F 0 "#PWR0108" H 5400 3100 50  0001 C CNN
+F 1 "+2V7" H 5375 3400 50  0000 C CNN
+F 2 "" H 5400 3250 50  0001 C CNN
+F 3 "" H 5400 3250 50  0001 C CNN
+	1    5400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+2V7 #PWR0109
+U 1 1 5D39D193
+P 3700 3700
+F 0 "#PWR0109" H 3700 3550 50  0001 C CNN
+F 1 "+2V7" H 3675 3850 50  0000 C CNN
+F 2 "" H 3700 3700 50  0001 C CNN
+F 3 "" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
