@@ -96,6 +96,31 @@ Item | Description
 #### Actual PCB
 <img src="images/Balance_Board.jpg" width="30%">
 
+The passive board essentially is controlled by the BMS board to allow the 
+bleeder resistor to slow down the rate of charge for that particular cell when
+the BMS board detects that the cell is too high of a delta from the rest.
+
+Currently I have a 2W 10R resistor but I'm having thermal issues because its 
+quite a lot of power to dissapate over the whole board so I'd recommend a 22R 2W
+resistor which is still good for what you need but will not cause any potential
+damage.
+
+The board also have the option of adding thermal jumpers and if you do decide to 
+do that then I'd recommend a 2oz copper for that PCB.  Thermal jumpers are electrically
+isolated and allow you to connect directly to ground without shorting anything
+which is pretty awesome in my opinion.
+
+Heres the link for the thermal jumpers.  They are really awesome but with the chip
+shortage its a decent lead time for them.
+
+https://www.digikey.com/en/products/detail/vishay-dale-thin-film/THJP0612AST1/11313314
+
+
+
 ### the Display (optional)
 <img src="images/tftScreen.jpg" width="30%">
+
+Currently the SoC is not an implemented function its just a placeholder.  But if
+anyone is willing to help out with this SoC code section then that would be 
+awesome as I'm still not sure the best way to implement this.
 
