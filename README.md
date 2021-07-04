@@ -41,6 +41,9 @@ community BMS.
 
 ## Pinout and Block Diagram <a name="pinout"></a>
 
+### the Protection Board
+<img src="images/20210704_theProtectionBoard_Pinout.png" width="30%">
+
 ## Board information <a name="information"></a>
 
 ### the Protection board <a name="theProtectionBoard"></a>
