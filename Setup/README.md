@@ -95,7 +95,38 @@ the interval of the serial print loop.
     ```c++
     1010, 1000
     ```
+    This will set the interval to 1 second interval.  Since we are storing
+    this value in eeprom, with a new MCU IC the eeprom has this value as 0 so
+    the loop will not operate without entering a value in eeprom and this
+    command stores the 1000 millisecond value in eeprom.
 
+2. Next we will set the sensativity value of the hall effect sensor
+    1. Type in:
+    ```c++
+    1008, 0.01333
+    ```
+    This sets the sensativity value to 13.33mV
+
+3. Now we will perform 1 of 3 two point calibration measurements.  Here you will
+need to now power the board from a 20V-30V dc source ( your battery pack will
+work just fine) instead of the ftdi board. You will also need the metal tweezers.
+    1. First take a measurement of the output of the current sensor (pin 3) with
+    you multimeter and write down that value.
+    2. Next type in the following into the serial monitor but do not hit enter
+    just yet:
+    ```c++
+    1001, 2.500
+    ```
+    The 2.500 is the voltage measurement you just took with your multimeter
+    3. Now with the metal tweezers, short the points across resistor R203 with 
+    your tweezers and then hit enter on the serial monitor.
+    4. Hold the tweezers until the serial monitor prompts you with the following:
+    ```c++
+    Connect Full scale reference and enter value 1
+    ```
+    5. Then let go of the tweezers and enter 1 in the serial monitor and enter.
+    6. Now the current sensor is calibrated.
+4. 
 
 ### Wiring and Connection
 
