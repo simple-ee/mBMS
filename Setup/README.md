@@ -118,12 +118,14 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     1001, 2.500
     ```
     The 2.500 is the voltage measurement you just took with your multimeter
+
     3. Now with the metal tweezers, short the points across resistor R203 with 
     your tweezers and then hit enter on the serial monitor.
     4. Hold the tweezers until the serial monitor prompts you with the following:
     ```c++
     Connect Full scale reference and enter value 1
     ```
+
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the current sensor is calibrated.
 4. 2 of 3 two point calibration measurements.  Here you will
@@ -137,12 +139,14 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     1002, 29.00
     ```
     The 29.00 is the voltage measurement you jsut took with your multimeter
+
     3. Hold the tweezers across resistor R205 and then hit enter on the serial
     monitor.
     4. Hold the tweezers until the serial monitor prompts you with the following:
     ```c++
     Connect full scale reference and enter value 1
     ```
+
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the battery voltage adc is calibrated.
 5. Last we will perform 3 of 3 two point calibration.  This last calibration is
@@ -157,12 +161,14 @@ Vsystem/2 to get the 0A reference.
     1003, 5.002
     ```
     The 5.002 represents the measurement system voltage
+
     3. Hold the tweezers across resistor R213 and the nhit enter on the serial
     monitor.
     4. Hold the tweezers until the serial monitor prompts you with the following:
     ```c++
     Connect full scale reference and enter value 1
     ```
+    
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the system voltage adc is calibrated
 
