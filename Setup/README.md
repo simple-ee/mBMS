@@ -36,6 +36,7 @@ To perform setup you will need the following items:
 1. Multimeter
 2. UART FTDI adaptor, ex. [FTDI](https://www.amazon.com/HiLetgo-FT232RL-Converter-Adapter-Breakout/dp/B00IJXZQ7C/ref=sr_1_3?dchild=1&keywords=ftdi&qid=1625502998&sr=8-3)
 3. a Pair of metal tweezers
+4. 20V - 30V DC source, it could be connected to the battery 
 
 
 After you upload the sketch to the Protection board, there are still a couple of
@@ -44,6 +45,7 @@ steps that need to be performed to get the unit up and operational.
 In the arduino sketch, towards the end of the arduino code, you will find the
 following serial monitor commands:
 
+```c++
 ////////////////////////////////////////////////////////////////////////////////
 // This function is called everytime a uart command is received.  We use it 
 // combined with the arduino serial monitor to set variables and perform
@@ -83,7 +85,7 @@ following serial monitor commands:
 // 11. 1011       | Sets the offsetcurrentzero value to help with getting a 
 //                | a better current measurement
 ////////////////////////////////////////////////////////////////////////////////
-
+```
 Perform the following steps in order:
 1. In serial monitor using 
 
