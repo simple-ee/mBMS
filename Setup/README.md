@@ -124,9 +124,63 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     ```c++
     Connect Full scale reference and enter value 1
     ```
-    5. Then let go of the tweezers and enter 1 in the serial monitor and enter.
+    5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the current sensor is calibrated.
-4. 
+4. 2 of 3 two point calibration measurements.  Here you will
+need to now power the board from a 20V-30V dc source ( your battery pack will
+work just fine) instead of the ftdi board. You will also need the metal tweezers.
+    1. First take a measurement at the VBAT+ terminal with your multimeter and
+    write down that value.
+    2. Next type in the following into the serial monitor but do not hit enter
+    just yet:
+    ```c++
+    1002, 29.00
+    ```
+    The 29.00 is the voltage measurement you jsut took with your multimeter
+    3. Hold the tweezers across resistor R205 and then hit enter on the serial
+    monitor.
+    4. Hold the tweezers until the serial monitor prompts you with the following:
+    ```c++
+    Connect full scale reference and enter value 1
+    ```
+    5. Then let go of the tweezers and enter 1 in the serial monitor.
+    6. Now the battery voltage adc is calibrated.
+5. Last we will perform 3 of 3 two point calibration.  This last calibration is
+for the system rail at the output of the buck converter.  This is needed to get 
+a good 0A reference for the current sensor since its bi-directional it takes
+Vsystem/2 to get the 0A reference.
+    1. First take a measurement at the output of the buck converter with the 
+    multimeter and write down that value.
+    2. Next type in the following into the serial monitor but do not hit enter 
+    just yet:
+    ```c++
+    1003, 5.002
+    ```
+    The 5.002 represents the measurement system voltage
+    3. Hold the tweezers across resistor R213 and the nhit enter on the serial
+    monitor.
+    4. Hold the tweezers until the serial monitor prompts you with the following:
+    ```c++
+    Connect full scale reference and enter value 1
+    ```
+    5. Then let go of the tweezers and enter 1 in the serial monitor.
+    6. Now the system voltage adc is calibrated
+
+The last step is to set the limit for the protection threshold values.
+6. Enter the following into the serial monitor;
+```c++
+1004,30.00, 29.00, 21.00
+```
+The first value is the over-current threshold limit so the mosfets will stop
+charging or discharging if the current hits this limit. 
+The next value is the over-voltage threshold limit so the charging mosfet will
+stop charging if the voltage threshold is hit.
+The last value is the under-voltage threshold limit so the discharging mosfet will
+stop discharging if the voltage of the pack goes below this value.
+
+Now you are ready to use the Protection Board.
+
+### the BMS Board configuration
 
 ### Wiring and Connection
 
