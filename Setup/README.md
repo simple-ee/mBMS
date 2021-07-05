@@ -35,6 +35,7 @@ same folder as the arduino ino.
 To perform setup you will need the following items:
 1. Multimeter
 2. UART FTDI adaptor, ex. [FTDI](https://www.amazon.com/HiLetgo-FT232RL-Converter-Adapter-Breakout/dp/B00IJXZQ7C/ref=sr_1_3?dchild=1&keywords=ftdi&qid=1625502998&sr=8-3)
+    1. Use the 5V configuration
 3. a Pair of metal tweezers
 4. 20V - 30V DC source, it could be connected to the battery 
 
@@ -87,7 +88,14 @@ following serial monitor commands:
 ////////////////////////////////////////////////////////////////////////////////
 ```
 Perform the following steps in order:
-1. In serial monitor using 
+1. In serial monitor using the FTDI adaptor, set the BAUD rate to 115200
+2. Initially you will not see anything on the monitor because we need to set
+the interval of the serial print loop.
+    1. Type in:
+    ```c++
+    1010, 1000
+    ```
+
 
 ### Wiring and Connection
 
