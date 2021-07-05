@@ -173,8 +173,10 @@ The last step is to set the limit for the protection threshold values.
 ```
 The first value is the over-current threshold limit so the mosfets will stop
 charging or discharging if the current hits this limit. 
+
 The next value is the over-voltage threshold limit so the charging mosfet will
 stop charging if the voltage threshold is hit.
+
 The last value is the under-voltage threshold limit so the discharging mosfet will
 stop discharging if the voltage of the pack goes below this value.
 
