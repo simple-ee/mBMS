@@ -18,6 +18,14 @@ memory space and also supports the PB variant of atmega328
 
 [minicore](https://github.com/MCUdude/MiniCore)
 
+Note: Since I did not add the SPI pins on the board (MOSI,MISO) you will have
+to install the bootloader before soldering it to the board.  You can follow the
+guide below to add the bootloader using an arduino uno board:
+
+[Install ardunio bootloader](https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoToBreadboard)
+
+https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoToBreadboard
+
 ## Arduino sketch
 Here is the source code link for both:
 
