@@ -11,7 +11,13 @@ We will also run through the two different ways of using this system.
 2. Connecting the Protection board to the BMS board for cell level protection
 
 
-## Bootloader
+## the Table of Contents
+1. [the bootloader](#bootloader)
+2. [Arduino Sketch](#sketch)
+3. [the Protection Board Configuration](#protection)
+4. [the BMS Board Configuration](#bms)
+
+## Bootloader<a name="bootloader"></a>
 Here I decided to use the minicore bootloader for the atmega328PB as it allowed
 me to configure the arduino with various options, it seems very efficient in 
 memory space and also supports the PB variant of atmega328
@@ -26,7 +32,7 @@ guide below to add the bootloader using an arduino uno board:
 
 https://www.arduino.cc/en/Tutorial/BuiltInExamples/ArduinoToBreadboard
 
-## Arduino sketch
+## Arduino sketch<a name="sketch"></a>
 Here is the source code link for both:
 
 1. The Protection board
@@ -38,7 +44,7 @@ Note: For board source code files, I created a second file called ADS1119.h whic
 I created to make using the ADC easier in the arduino code.  This file must be in the
 same folder as the arduino ino.
 
-### the Protection Board configuration
+## the Protection Board configuration<a name="protection"></a>
 
 To perform setup you will need the following items:
 1. Multimeter
@@ -204,7 +210,7 @@ when no load is connected.
 
 Now you are ready to use the Protection Board.
 
-### the BMS Board configuration
+## the BMS Board configuration<a name="bms"></a>
 
 ### Wiring and Connection
 
