@@ -168,7 +168,7 @@ Vsystem/2 to get the 0A reference.
     ```c++
     Connect full scale reference and enter value 1
     ```
-    
+
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the system voltage adc is calibrated
 
@@ -185,6 +185,14 @@ stop charging if the voltage threshold is hit.
 
 The last value is the under-voltage threshold limit so the discharging mosfet will
 stop discharging if the voltage of the pack goes below this value.
+
+7. Last step is to set the offset zero current commands.  This automatically
+eliminates any offset that will show a positive or negative current value
+when no load is connected.
+    1. Enter the following in serial monitor:
+    ```c++ 
+    1011
+    ```  
 
 Now you are ready to use the Protection Board.
 
