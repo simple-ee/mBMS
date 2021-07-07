@@ -147,7 +147,8 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the current sensor is calibrated.
 
-    <img src="images/serial_1001_1.PNG" width="30%">
+    <img src="images/serial_1001_after_1.PNG" width="30%">
+
 4. 2 of 3 two point calibration measurements.  Here you will
 need to now power the board from a 20V-30V dc source ( your battery pack will
 work just fine) instead of the ftdi board. You will also need the metal tweezers.
