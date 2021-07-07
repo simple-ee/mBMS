@@ -115,7 +115,7 @@ the interval of the serial print loop.
     command stores the 1000 millisecond value in eeprom.
 
 
-    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1010.PNG" width="30%">
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1010.PNG" width="80%">
 
 2. Next we will set the sensativity value of the hall effect sensor
     1. Type in:
@@ -136,7 +136,7 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     ```
     The 2.500 is the voltage measurement you just took with your multimeter
 
-    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1001.PNG" width="30%">
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1001.PNG" width="80%">
 
     3. Now with the metal tweezers, short the points across resistor R203 with 
     your tweezers and then hit enter on the serial monitor.
@@ -148,7 +148,7 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the current sensor is calibrated.
 
-    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1001_after_1.PNG" width="30%">
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1001_after_1.PNG" width="80%">
 
 4. 2 of 3 two point calibration measurements.  Here you will
 need to now power the board from a 20V-30V dc source ( your battery pack will
@@ -160,6 +160,9 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     ```c++
     1002, 29.00
     ```
+
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1002.PNG" width="80%">
+
     The 29.00 is the voltage measurement you jsut took with your multimeter
 
     3. Hold the tweezers across resistor R205 and then hit enter on the serial
@@ -168,6 +171,8 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     ```c++
     Connect full scale reference and enter value 1
     ```
+
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1002_after_1.PNG" width="80%">
 
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the battery voltage adc is calibrated.
