@@ -132,7 +132,7 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     2. Next type in the following into the serial monitor but do not hit enter
     just yet:
     ```c++
-    1001, 2.500
+    1001, 2.517
     ```
     The 2.500 is the voltage measurement you just took with your multimeter
 
@@ -158,12 +158,12 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     2. Next type in the following into the serial monitor but do not hit enter
     just yet:
     ```c++
-    1002, 29.00
+    1002, 24.00
     ```
 
     <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1002.PNG" width="80%">
 
-    The 29.00 is the voltage measurement you jsut took with your multimeter
+    The 24.00 is the voltage measurement you jsut took with your multimeter
 
     3. Hold the tweezers across resistor R205 and then hit enter on the serial
     monitor.
@@ -220,6 +220,8 @@ when no load is connected.
     ```c++ 
     1011
     ```  
+
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1011.PNG" width="80%">
 
 Now you are ready to use the Protection Board.
 
