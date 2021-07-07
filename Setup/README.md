@@ -115,7 +115,7 @@ the interval of the serial print loop.
     command stores the 1000 millisecond value in eeprom.
 
 
-    <img src="mBMS/blob/main/images/serial_1010.PNG" width="30%">
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1010.PNG" width="30%">
 
 2. Next we will set the sensativity value of the hall effect sensor
     1. Type in:
@@ -136,7 +136,7 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     ```
     The 2.500 is the voltage measurement you just took with your multimeter
 
-    <img src="mBMS/blob/main/images/serial_1001.PNG" width="30%">
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1001.PNG" width="30%">
 
     3. Now with the metal tweezers, short the points across resistor R203 with 
     your tweezers and then hit enter on the serial monitor.
@@ -148,7 +148,7 @@ work just fine) instead of the ftdi board. You will also need the metal tweezers
     5. Then let go of the tweezers and enter 1 in the serial monitor.
     6. Now the current sensor is calibrated.
 
-    <img src="mBMS/blob/main/images/serial_1001_after_1.PNG" width="30%">
+    <img src="https://github.com/simple-ee/mBMS/blob/main/images/serial_1001_after_1.PNG" width="30%">
 
 4. 2 of 3 two point calibration measurements.  Here you will
 need to now power the board from a 20V-30V dc source ( your battery pack will
