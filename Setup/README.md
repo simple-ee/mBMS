@@ -235,6 +235,53 @@ To perform setup you will need the following items:
     is what I use to calibrate my BMS:
         1. Link: [Stackable Voltage Reference](https://www.ti.com/lit/an/sbaa203/sbaa203.pdf?ts=1625974619837&ref_url=https%253A%252F%252Fwww.google.com%252F)
 
+After you upload the sketch to the BMS boar, there are still a couple of steps that
+you need to perform before the system is up and running.
+
+In the arduino sketch, towards the end of the arduni code, you will find the 
+following serial monitor commands:
+
+```c++
+////////////////////////////////////////////////////////////////////////////////
+// This function is called everytime a uart command is received.  We use it 
+// combined with the arduino serial monitor to set variables and perform
+// certain commands.
+// example of command to send via serial monitor:
+// ex. 101, UVP
+//     101, 2.70
+//------------------------------------------------------------------------------
+// List of commands
+//------------------------------------------------------------------------------
+// 1. 10          | Resets two point calibration values
+//------------------------------------------------------------------------------
+// 2. 11          | Blank Function 
+//------------------------------------------------------------------------------
+// 3. 12,3.00,6.00, | Two point calibration for the adc values.  First set 
+//    9.00,12.00,   | the jumper to external power for the bms board, then
+//    15.00,18.00,  | apply voltages to each adc input and measure each 
+//    21.00,24.00   | point with a multimeter and write down those values.
+//                  | Enter those values in order from lowest to highest
+//                  | like so: 12,cell1,cell2,cell3,cell4,cell5,cell6,cell7,
+//                  | cell8
+//------------------------------------------------------------------------------
+// 4. 100,0.015   | Sets new delta between the lowest cell and the rest of the 
+//                | cells.  The example on the left sets the tolerance to 15mV
+//------------------------------------------------------------------------------
+// 5. 101, 2.70   | Sets new under voltage threshold value
+//------------------------------------------------------------------------------
+// 6. 102, 3.75   | Sets new over voltage threshold value
+//------------------------------------------------------------------------------
+// 7. 103, 1000   | Sets new value for main loop interval
+//------------------------------------------------------------------------------
+// 8. 1000        | Resets fault condition and returns system to normal
+//------------------------------------------------------------------------------
+// 9. 1001        | Test function (not used)
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+```
+
 ### Wiring and Connection
 
 
