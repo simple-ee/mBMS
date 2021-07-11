@@ -225,6 +225,16 @@ Now you are ready to use the Protection Board.
 
 ## the BMS Board configuration<a name="bms"></a>
 
+To perform setup you will need the following items:
+1. Multimeter
+2. UART FTDI adaptor, ex. [FTDI](https://www.amazon.com/HiLetgo-FT232RL-Converter-Adapter-Breakout/dp/B00IJXZQ7C/ref=sr_1_3?dchild=1&keywords=ftdi&qid=1625502998&sr=8-3)
+    1. Use the 5V configuration
+4. Here there are two options you can go about for adc calibration:
+    1. 8S battery or
+    2. A stackable 8 series voltage reference. Here is a link to the REF50 which
+    is what I use to calibrate my BMS:
+        1. Link: [Stackable Voltage Reference](https://www.ti.com/lit/an/sbaa203/sbaa203.pdf?ts=1625974619837&ref_url=https%253A%252F%252Fwww.google.com%252F)
+
 ### Wiring and Connection
 
 
