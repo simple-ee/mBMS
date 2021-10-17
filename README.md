@@ -38,6 +38,11 @@ community BMS.
 [Software Setup](https://github.com/simple-ee/mBMS/tree/main/Setup)
 
 ### Wiring and Connection <a name="connect"></a>
+#### Single 8S Pack Wiring Diagram
+Here we have the wiring diagram for connecting the mBMS to an 8S pack and is considered a single pack system:
+<img src="/images/20211015_mBMS_WiringDiagram_SingleBattery.png" width="40%">
+
+
 
 ## Pinout and Block Diagram <a name="pinout"></a>
 
