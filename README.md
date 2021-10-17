@@ -40,7 +40,7 @@ community BMS.
 ### Wiring and Connection <a name="connect"></a>
 #### Single 8S Pack Wiring Diagram
 Here we have the wiring diagram for connecting the mBMS to an 8S pack and is considered a single pack system:
-<img src="/images/20211015_mBMS_WiringDiagram_SingleBattery.png" width="40%">
+<img src="/images/20211015_mBMS_WiringDiagram_SingleBattery.png" width="60%">
 
 
 
@@ -56,7 +56,7 @@ Here we have the wiring diagram for connecting the mBMS to an 8S pack and is con
 [kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20Protection%20Board)
 
 #### Rendered PCB
-<img src="images/20190720_Project_OCP-OVP-UVP.png" width="50%">
+<img src="images/20190720_Project_OCP-OVP-UVP.png" width="30%">
 
 #### Actual PCB
 <img src="/images/OCP_Board.jpg" width="40%">
