@@ -40,6 +40,7 @@ community BMS.
 ### Wiring and Connection <a name="connect"></a>
 #### Single 8S Pack Wiring Diagram
 Here we have the wiring diagram for connecting the mBMS to an 8S pack and is considered a single pack system:
+
 <img src="/images/20211015_mBMS_WiringDiagram_SingleBattery.png" width="60%">
 
 #### Parallel multiple 8S Wiring Diagram
@@ -47,6 +48,7 @@ Here we have the wiring diagram for connecting multiple 8S packs in parallel.  H
 ideal diodes to make sure that the other packs in parallel do not charge or discharge a pack that has gone into protection.  I designed the system this way to allow
 for scalability of system storage.  By protecting each pack separately then you can, theoretically, add tens of hundreds of 8S packs in parallel when you need more storage
 without having to reconfigure your system to add more storage or turn off the system to add more storage.
+
 <img src="/images/20211015_mBMS_WiringDiagram_MultiBattery.png" width="60%"> 
 
 
