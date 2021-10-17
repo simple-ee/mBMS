@@ -56,7 +56,7 @@ Here we have the wiring diagram for connecting the mBMS to an 8S pack and is con
 [kicad Files and gerber files](https://github.com/simple-ee/mBMS/tree/main/Schematic/The%20Protection%20Board)
 
 #### Rendered PCB
-<img src="images/20190720_Project_OCP-OVP-UVP.png" width="30%">
+<img src="images/20190720_Project_OCP-OVP-UVP.png" width="50%">
 
 #### Actual PCB
 <img src="/images/OCP_Board.jpg" width="40%">
