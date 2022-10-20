@@ -1,3 +1,8 @@
+# WARNING!
+Just a reminder that this is a DIY product/solution so don’t use this for safety 
+critical systems or in any situation where there could be a risk to life. 
+There is no warranty, it may not work as expected or at all.
+
 # modular BMS by simple-ee.com
 This is what I am calling the modular BMS for an 8S LiFePO4 pack.  I've designed
 this as three main parts.  Currently this design is functional and running my
