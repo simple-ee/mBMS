@@ -54,7 +54,7 @@ ideal diodes to make sure that the other packs in parallel do not charge or disc
 for scalability of system storage.  By protecting each pack separately then you can, theoretically, add tens of hundreds of 8S packs in parallel when you need more storage
 without having to reconfigure your system to add more storage or turn off the system to add more storage.
 
-<img src="/images/20211015_mBMS_WiringDiagram_MultiBattery.png" width="60%"> 
+<img src="/images/20230113_mBMS_WiringDiagram_MultiBattery.png" width="60%"> 
 
 
 
